@@ -1,4 +1,6 @@
 %{
+/* Nome: Joao Vitor Ribeiro Botelho */
+/* Disciplina: Compiladores - Lab 01 */
 #include <stdio.h>
 %}
 
