@@ -1,6 +1,6 @@
 # Compiladores
 
-Repositório destinado ao armazenamento dos laboratórios e projetos práticos da disciplina de Compiladores. O foco principal é o desenvolvimento de um compilador completo para a linguagem ANSI C, utilizando ferramentas clássicas de análise léxica e sintática.
+Repositório destinado ao armazenamento dos laboratórios e projetos práticos da disciplina de Compiladores. O foco principal é o desenvolvimento de um compilador completo para a linguagem ANSI C.
 
 ## Tecnologias e Ferramentas
 
