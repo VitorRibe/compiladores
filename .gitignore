@@ -1,0 +1,11 @@
+# Ignora pastas de documentação em qualquer nível
+**/docs/
+
+# Binários e arquivos temporários do Flex
+meu_compilador
+lex.yy.c
+a.out
+*.o
+
+# Arquivos de sistema
+.DS_Store
