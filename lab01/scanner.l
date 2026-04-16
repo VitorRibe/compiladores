@@ -17,18 +17,14 @@ STRING      \"([^\"\\\n]|\\.)*\"
 
 "/*"([^*]|\*+[^*/])*\*+"/" { /* Ignora comentarios */ }
 
-"int"|"double"|"struct"|"typedef"|"if"|"else"|"return"|"for"|"while"|"void"|"printf" { printf("KEYWORD %s\n", yytext); }
+"int"|"double"|"struct"|"typedef"|"if"|"else"|"return"|"for"|"while"|"void"|"printf" { printf("%s %s\n", yytext, yytext); }
 
 {ID}        { printf("ID %s\n", yytext); }
 {NUM_DEC}   { printf("NUM_DEC %s\n", yytext); }
 {NUM_INT}   { printf("NUM_INT %s\n", yytext); }
 {STRING}    { printf("STRING %s\n", yytext); }
 
-"=="|"!="|"<="|">="|">"|"<"|"&&"|"||"|"!" { printf("OP_LOG_REL %s\n", yytext); }
-"="|"+="|"-=" { printf("OP_ASSIGN %s\n", yytext); }
-"++"|"--"|"+"|"-"|"*"|"/"|"%" { printf("OP_ARITH %s\n", yytext); }
-
-";"|","|"."|"("|")"|"{"|"}"|"["|"]"|"#"|":" { printf("PUNCT %s\n", yytext); }
+"=="|"!="|"<="|">="|">"|"<"|"&&"|"||"|"!"|"="|"+="|"-="|"++"|"--"|"+"|"-"|"*"|"/"|"%"|";"|","|"."|"("|")"|"{"|"}"|"["|"]"|"#"|":" { printf("%s %s\n", yytext, yytext); }
 
 {ESPACO}    { /* ignora */ }
 {NOVA_LINHA} { /* ignora */ }

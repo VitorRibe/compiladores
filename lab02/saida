@@ -1,0 +1,2655 @@
+0 : # -> (shift:,r=-1,prox=6)
+0 : ID -> (shift:,r=-1,prox=11)
+0 : typedef -> (shift:,r=-1,prox=7)
+0 : int -> (shift:,r=-1,prox=9)
+0 : double -> (shift:,r=-1,prox=10)
+0 : $ -> (reduz:,r=2,prox=-1)
+0 : ListaElementos -> (goto:,r=-1,prox=1)
+0 : Elemento -> (goto:,r=-1,prox=2)
+0 : IncludeDecl -> (goto:,r=-1,prox=3)
+0 : TypedefDecl -> (goto:,r=-1,prox=4)
+0 : Tipo -> (goto:,r=-1,prox=8)
+0 : FuncaoDecl -> (goto:,r=-1,prox=5)
+1 : $ -> (aceita,r=-1,prox=-1)
+2 : # -> (shift:,r=-1,prox=6)
+2 : ID -> (shift:,r=-1,prox=11)
+2 : typedef -> (shift:,r=-1,prox=7)
+2 : int -> (shift:,r=-1,prox=9)
+2 : double -> (shift:,r=-1,prox=10)
+2 : $ -> (reduz:,r=2,prox=-1)
+2 : ListaElementos -> (goto:,r=-1,prox=12)
+2 : Elemento -> (goto:,r=-1,prox=2)
+2 : IncludeDecl -> (goto:,r=-1,prox=3)
+2 : TypedefDecl -> (goto:,r=-1,prox=4)
+2 : Tipo -> (goto:,r=-1,prox=8)
+2 : FuncaoDecl -> (goto:,r=-1,prox=5)
+3 : # -> (reduz:,r=3,prox=-1)
+3 : ID -> (reduz:,r=3,prox=-1)
+3 : typedef -> (reduz:,r=3,prox=-1)
+3 : int -> (reduz:,r=3,prox=-1)
+3 : double -> (reduz:,r=3,prox=-1)
+3 : $ -> (reduz:,r=3,prox=-1)
+4 : # -> (reduz:,r=4,prox=-1)
+4 : ID -> (reduz:,r=4,prox=-1)
+4 : typedef -> (reduz:,r=4,prox=-1)
+4 : int -> (reduz:,r=4,prox=-1)
+4 : double -> (reduz:,r=4,prox=-1)
+4 : $ -> (reduz:,r=4,prox=-1)
+5 : # -> (reduz:,r=5,prox=-1)
+5 : ID -> (reduz:,r=5,prox=-1)
+5 : typedef -> (reduz:,r=5,prox=-1)
+5 : int -> (reduz:,r=5,prox=-1)
+5 : double -> (reduz:,r=5,prox=-1)
+5 : $ -> (reduz:,r=5,prox=-1)
+6 : ID -> (shift:,r=-1,prox=13)
+7 : struct -> (shift:,r=-1,prox=14)
+8 : ID -> (shift:,r=-1,prox=15)
+9 : ID -> (reduz:,r=10,prox=-1)
+10 : ID -> (reduz:,r=11,prox=-1)
+11 : ID -> (reduz:,r=12,prox=-1)
+12 : $ -> (reduz:,r=1,prox=-1)
+13 : < -> (shift:,r=-1,prox=16)
+14 : { -> (shift:,r=-1,prox=17)
+15 : ( -> (shift:,r=-1,prox=18)
+16 : ID -> (shift:,r=-1,prox=19)
+17 : ID -> (shift:,r=-1,prox=11)
+17 : } -> (reduz:,r=9,prox=-1)
+17 : int -> (shift:,r=-1,prox=9)
+17 : double -> (shift:,r=-1,prox=10)
+17 : ListaCampos -> (goto:,r=-1,prox=20)
+17 : Tipo -> (goto:,r=-1,prox=22)
+17 : DeclaracaoVar -> (goto:,r=-1,prox=21)
+18 : ID -> (shift:,r=-1,prox=11)
+18 : int -> (shift:,r=-1,prox=9)
+18 : double -> (shift:,r=-1,prox=10)
+18 : ) -> (reduz:,r=19,prox=-1)
+18 : Tipo -> (goto:,r=-1,prox=25)
+18 : ListaParams -> (goto:,r=-1,prox=23)
+18 : Parametro -> (goto:,r=-1,prox=24)
+19 : . -> (shift:,r=-1,prox=26)
+20 : } -> (shift:,r=-1,prox=27)
+21 : ID -> (shift:,r=-1,prox=11)
+21 : } -> (reduz:,r=9,prox=-1)
+21 : int -> (shift:,r=-1,prox=9)
+21 : double -> (shift:,r=-1,prox=10)
+21 : ListaCampos -> (goto:,r=-1,prox=28)
+21 : Tipo -> (goto:,r=-1,prox=22)
+21 : DeclaracaoVar -> (goto:,r=-1,prox=21)
+22 : ID -> (shift:,r=-1,prox=30)
+22 : ListaIDs -> (goto:,r=-1,prox=29)
+23 : ) -> (shift:,r=-1,prox=31)
+24 : , -> (shift:,r=-1,prox=32)
+24 : ) -> (reduz:,r=18,prox=-1)
+25 : ID -> (shift:,r=-1,prox=33)
+26 : ID -> (shift:,r=-1,prox=34)
+27 : ID -> (shift:,r=-1,prox=35)
+28 : } -> (reduz:,r=8,prox=-1)
+29 : ; -> (shift:,r=-1,prox=36)
+30 : ; -> (reduz:,r=15,prox=-1)
+30 : , -> (shift:,r=-1,prox=37)
+31 : { -> (shift:,r=-1,prox=39)
+31 : Bloco -> (goto:,r=-1,prox=38)
+32 : ID -> (shift:,r=-1,prox=11)
+32 : int -> (shift:,r=-1,prox=9)
+32 : double -> (shift:,r=-1,prox=10)
+32 : ) -> (reduz:,r=19,prox=-1)
+32 : Tipo -> (goto:,r=-1,prox=25)
+32 : ListaParams -> (goto:,r=-1,prox=40)
+32 : Parametro -> (goto:,r=-1,prox=24)
+33 : , -> (reduz:,r=20,prox=-1)
+33 : ) -> (reduz:,r=20,prox=-1)
+33 : [ -> (shift:,r=-1,prox=41)
+34 : > -> (shift:,r=-1,prox=42)
+35 : ; -> (shift:,r=-1,prox=43)
+36 : ID -> (reduz:,r=13,prox=-1)
+36 : } -> (reduz:,r=13,prox=-1)
+36 : int -> (reduz:,r=13,prox=-1)
+36 : double -> (reduz:,r=13,prox=-1)
+36 : ( -> (reduz:,r=13,prox=-1)
+36 : if -> (reduz:,r=13,prox=-1)
+36 : while -> (reduz:,r=13,prox=-1)
+36 : for -> (reduz:,r=13,prox=-1)
+36 : return -> (reduz:,r=13,prox=-1)
+36 : NUM_INT -> (reduz:,r=13,prox=-1)
+36 : NUM_DEC -> (reduz:,r=13,prox=-1)
+36 : ! -> (reduz:,r=13,prox=-1)
+37 : ID -> (shift:,r=-1,prox=30)
+37 : ListaIDs -> (goto:,r=-1,prox=44)
+38 : # -> (reduz:,r=16,prox=-1)
+38 : ID -> (reduz:,r=16,prox=-1)
+38 : typedef -> (reduz:,r=16,prox=-1)
+38 : int -> (reduz:,r=16,prox=-1)
+38 : double -> (reduz:,r=16,prox=-1)
+38 : $ -> (reduz:,r=16,prox=-1)
+39 : ID -> (shift:,r=-1,prox=48)
+39 : } -> (reduz:,r=24,prox=-1)
+39 : int -> (shift:,r=-1,prox=9)
+39 : double -> (shift:,r=-1,prox=10)
+39 : ( -> (shift:,r=-1,prox=64)
+39 : if -> (shift:,r=-1,prox=50)
+39 : while -> (shift:,r=-1,prox=51)
+39 : for -> (shift:,r=-1,prox=52)
+39 : return -> (shift:,r=-1,prox=53)
+39 : NUM_INT -> (shift:,r=-1,prox=61)
+39 : NUM_DEC -> (shift:,r=-1,prox=62)
+39 : ! -> (shift:,r=-1,prox=65)
+39 : Tipo -> (goto:,r=-1,prox=22)
+39 : DeclaracaoVar -> (goto:,r=-1,prox=47)
+39 : ListaComandos -> (goto:,r=-1,prox=45)
+39 : Comando -> (goto:,r=-1,prox=46)
+39 : Exp -> (goto:,r=-1,prox=54)
+39 : ExpAnd -> (goto:,r=-1,prox=55)
+39 : ExpEq -> (goto:,r=-1,prox=56)
+39 : ExpRel -> (goto:,r=-1,prox=57)
+39 : ExpAdd -> (goto:,r=-1,prox=58)
+39 : ExpMult -> (goto:,r=-1,prox=59)
+39 : Fator -> (goto:,r=-1,prox=60)
+39 : Acesso -> (goto:,r=-1,prox=49)
+39 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+40 : ) -> (reduz:,r=17,prox=-1)
+41 : ] -> (shift:,r=-1,prox=66)
+42 : # -> (reduz:,r=6,prox=-1)
+42 : ID -> (reduz:,r=6,prox=-1)
+42 : typedef -> (reduz:,r=6,prox=-1)
+42 : int -> (reduz:,r=6,prox=-1)
+42 : double -> (reduz:,r=6,prox=-1)
+42 : $ -> (reduz:,r=6,prox=-1)
+43 : # -> (reduz:,r=7,prox=-1)
+43 : ID -> (reduz:,r=7,prox=-1)
+43 : typedef -> (reduz:,r=7,prox=-1)
+43 : int -> (reduz:,r=7,prox=-1)
+43 : double -> (reduz:,r=7,prox=-1)
+43 : $ -> (reduz:,r=7,prox=-1)
+44 : ; -> (reduz:,r=14,prox=-1)
+45 : } -> (shift:,r=-1,prox=67)
+46 : ID -> (shift:,r=-1,prox=48)
+46 : } -> (reduz:,r=24,prox=-1)
+46 : int -> (shift:,r=-1,prox=9)
+46 : double -> (shift:,r=-1,prox=10)
+46 : ( -> (shift:,r=-1,prox=64)
+46 : if -> (shift:,r=-1,prox=50)
+46 : while -> (shift:,r=-1,prox=51)
+46 : for -> (shift:,r=-1,prox=52)
+46 : return -> (shift:,r=-1,prox=53)
+46 : NUM_INT -> (shift:,r=-1,prox=61)
+46 : NUM_DEC -> (shift:,r=-1,prox=62)
+46 : ! -> (shift:,r=-1,prox=65)
+46 : Tipo -> (goto:,r=-1,prox=22)
+46 : DeclaracaoVar -> (goto:,r=-1,prox=47)
+46 : ListaComandos -> (goto:,r=-1,prox=68)
+46 : Comando -> (goto:,r=-1,prox=46)
+46 : Exp -> (goto:,r=-1,prox=54)
+46 : ExpAnd -> (goto:,r=-1,prox=55)
+46 : ExpEq -> (goto:,r=-1,prox=56)
+46 : ExpRel -> (goto:,r=-1,prox=57)
+46 : ExpAdd -> (goto:,r=-1,prox=58)
+46 : ExpMult -> (goto:,r=-1,prox=59)
+46 : Fator -> (goto:,r=-1,prox=60)
+46 : Acesso -> (goto:,r=-1,prox=49)
+46 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+47 : ID -> (reduz:,r=25,prox=-1)
+47 : } -> (reduz:,r=25,prox=-1)
+47 : int -> (reduz:,r=25,prox=-1)
+47 : double -> (reduz:,r=25,prox=-1)
+47 : ( -> (reduz:,r=25,prox=-1)
+47 : if -> (reduz:,r=25,prox=-1)
+47 : while -> (reduz:,r=25,prox=-1)
+47 : for -> (reduz:,r=25,prox=-1)
+47 : return -> (reduz:,r=25,prox=-1)
+47 : NUM_INT -> (reduz:,r=25,prox=-1)
+47 : NUM_DEC -> (reduz:,r=25,prox=-1)
+47 : ! -> (reduz:,r=25,prox=-1)
+48 : ID -> (reduz:,r=12,prox=-1)
+48 : < -> (reduz:,r=62,prox=-1)
+48 : . -> (shift:,r=-1,prox=71)
+48 : > -> (reduz:,r=62,prox=-1)
+48 : ; -> (reduz:,r=62,prox=-1)
+48 : ( -> (shift:,r=-1,prox=72)
+48 : [ -> (shift:,r=-1,prox=70)
+48 : = -> (shift:,r=-1,prox=69)
+48 : || -> (reduz:,r=62,prox=-1)
+48 : && -> (reduz:,r=62,prox=-1)
+48 : == -> (reduz:,r=62,prox=-1)
+48 : != -> (reduz:,r=62,prox=-1)
+48 : <= -> (reduz:,r=62,prox=-1)
+48 : >= -> (reduz:,r=62,prox=-1)
+48 : + -> (reduz:,r=62,prox=-1)
+48 : - -> (reduz:,r=62,prox=-1)
+48 : * -> (reduz:,r=62,prox=-1)
+48 : / -> (reduz:,r=62,prox=-1)
+48 : % -> (reduz:,r=62,prox=-1)
+49 : < -> (reduz:,r=63,prox=-1)
+49 : . -> (shift:,r=-1,prox=74)
+49 : > -> (reduz:,r=63,prox=-1)
+49 : ; -> (reduz:,r=63,prox=-1)
+49 : = -> (shift:,r=-1,prox=73)
+49 : || -> (reduz:,r=63,prox=-1)
+49 : && -> (reduz:,r=63,prox=-1)
+49 : == -> (reduz:,r=63,prox=-1)
+49 : != -> (reduz:,r=63,prox=-1)
+49 : <= -> (reduz:,r=63,prox=-1)
+49 : >= -> (reduz:,r=63,prox=-1)
+49 : + -> (reduz:,r=63,prox=-1)
+49 : - -> (reduz:,r=63,prox=-1)
+49 : * -> (reduz:,r=63,prox=-1)
+49 : / -> (reduz:,r=63,prox=-1)
+49 : % -> (reduz:,r=63,prox=-1)
+50 : ( -> (shift:,r=-1,prox=75)
+51 : ( -> (shift:,r=-1,prox=76)
+52 : ( -> (shift:,r=-1,prox=77)
+53 : ID -> (shift:,r=-1,prox=80)
+53 : ; -> (shift:,r=-1,prox=79)
+53 : ( -> (shift:,r=-1,prox=64)
+53 : NUM_INT -> (shift:,r=-1,prox=61)
+53 : NUM_DEC -> (shift:,r=-1,prox=62)
+53 : ! -> (shift:,r=-1,prox=65)
+53 : Exp -> (goto:,r=-1,prox=78)
+53 : ExpAnd -> (goto:,r=-1,prox=55)
+53 : ExpEq -> (goto:,r=-1,prox=56)
+53 : ExpRel -> (goto:,r=-1,prox=57)
+53 : ExpAdd -> (goto:,r=-1,prox=58)
+53 : ExpMult -> (goto:,r=-1,prox=59)
+53 : Fator -> (goto:,r=-1,prox=60)
+53 : Acesso -> (goto:,r=-1,prox=81)
+53 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+54 : ; -> (shift:,r=-1,prox=82)
+54 : || -> (shift:,r=-1,prox=83)
+55 : ; -> (reduz:,r=42,prox=-1)
+55 : , -> (reduz:,r=42,prox=-1)
+55 : ) -> (reduz:,r=42,prox=-1)
+55 : ] -> (reduz:,r=42,prox=-1)
+55 : || -> (reduz:,r=42,prox=-1)
+55 : && -> (shift:,r=-1,prox=84)
+56 : ; -> (reduz:,r=44,prox=-1)
+56 : , -> (reduz:,r=44,prox=-1)
+56 : ) -> (reduz:,r=44,prox=-1)
+56 : ] -> (reduz:,r=44,prox=-1)
+56 : || -> (reduz:,r=44,prox=-1)
+56 : && -> (reduz:,r=44,prox=-1)
+56 : == -> (shift:,r=-1,prox=85)
+56 : != -> (shift:,r=-1,prox=86)
+57 : < -> (shift:,r=-1,prox=87)
+57 : > -> (shift:,r=-1,prox=89)
+57 : ; -> (reduz:,r=47,prox=-1)
+57 : , -> (reduz:,r=47,prox=-1)
+57 : ) -> (reduz:,r=47,prox=-1)
+57 : ] -> (reduz:,r=47,prox=-1)
+57 : || -> (reduz:,r=47,prox=-1)
+57 : && -> (reduz:,r=47,prox=-1)
+57 : == -> (reduz:,r=47,prox=-1)
+57 : != -> (reduz:,r=47,prox=-1)
+57 : <= -> (shift:,r=-1,prox=88)
+57 : >= -> (shift:,r=-1,prox=90)
+58 : < -> (reduz:,r=52,prox=-1)
+58 : > -> (reduz:,r=52,prox=-1)
+58 : ; -> (reduz:,r=52,prox=-1)
+58 : , -> (reduz:,r=52,prox=-1)
+58 : ) -> (reduz:,r=52,prox=-1)
+58 : ] -> (reduz:,r=52,prox=-1)
+58 : || -> (reduz:,r=52,prox=-1)
+58 : && -> (reduz:,r=52,prox=-1)
+58 : == -> (reduz:,r=52,prox=-1)
+58 : != -> (reduz:,r=52,prox=-1)
+58 : <= -> (reduz:,r=52,prox=-1)
+58 : >= -> (reduz:,r=52,prox=-1)
+58 : + -> (shift:,r=-1,prox=91)
+58 : - -> (shift:,r=-1,prox=92)
+59 : < -> (reduz:,r=55,prox=-1)
+59 : > -> (reduz:,r=55,prox=-1)
+59 : ; -> (reduz:,r=55,prox=-1)
+59 : , -> (reduz:,r=55,prox=-1)
+59 : ) -> (reduz:,r=55,prox=-1)
+59 : ] -> (reduz:,r=55,prox=-1)
+59 : || -> (reduz:,r=55,prox=-1)
+59 : && -> (reduz:,r=55,prox=-1)
+59 : == -> (reduz:,r=55,prox=-1)
+59 : != -> (reduz:,r=55,prox=-1)
+59 : <= -> (reduz:,r=55,prox=-1)
+59 : >= -> (reduz:,r=55,prox=-1)
+59 : + -> (reduz:,r=55,prox=-1)
+59 : - -> (reduz:,r=55,prox=-1)
+59 : * -> (shift:,r=-1,prox=93)
+59 : / -> (shift:,r=-1,prox=94)
+59 : % -> (shift:,r=-1,prox=95)
+60 : < -> (reduz:,r=59,prox=-1)
+60 : > -> (reduz:,r=59,prox=-1)
+60 : ; -> (reduz:,r=59,prox=-1)
+60 : , -> (reduz:,r=59,prox=-1)
+60 : ) -> (reduz:,r=59,prox=-1)
+60 : ] -> (reduz:,r=59,prox=-1)
+60 : || -> (reduz:,r=59,prox=-1)
+60 : && -> (reduz:,r=59,prox=-1)
+60 : == -> (reduz:,r=59,prox=-1)
+60 : != -> (reduz:,r=59,prox=-1)
+60 : <= -> (reduz:,r=59,prox=-1)
+60 : >= -> (reduz:,r=59,prox=-1)
+60 : + -> (reduz:,r=59,prox=-1)
+60 : - -> (reduz:,r=59,prox=-1)
+60 : * -> (reduz:,r=59,prox=-1)
+60 : / -> (reduz:,r=59,prox=-1)
+60 : % -> (reduz:,r=59,prox=-1)
+61 : < -> (reduz:,r=60,prox=-1)
+61 : > -> (reduz:,r=60,prox=-1)
+61 : ; -> (reduz:,r=60,prox=-1)
+61 : , -> (reduz:,r=60,prox=-1)
+61 : ) -> (reduz:,r=60,prox=-1)
+61 : ] -> (reduz:,r=60,prox=-1)
+61 : || -> (reduz:,r=60,prox=-1)
+61 : && -> (reduz:,r=60,prox=-1)
+61 : == -> (reduz:,r=60,prox=-1)
+61 : != -> (reduz:,r=60,prox=-1)
+61 : <= -> (reduz:,r=60,prox=-1)
+61 : >= -> (reduz:,r=60,prox=-1)
+61 : + -> (reduz:,r=60,prox=-1)
+61 : - -> (reduz:,r=60,prox=-1)
+61 : * -> (reduz:,r=60,prox=-1)
+61 : / -> (reduz:,r=60,prox=-1)
+61 : % -> (reduz:,r=60,prox=-1)
+62 : < -> (reduz:,r=61,prox=-1)
+62 : > -> (reduz:,r=61,prox=-1)
+62 : ; -> (reduz:,r=61,prox=-1)
+62 : , -> (reduz:,r=61,prox=-1)
+62 : ) -> (reduz:,r=61,prox=-1)
+62 : ] -> (reduz:,r=61,prox=-1)
+62 : || -> (reduz:,r=61,prox=-1)
+62 : && -> (reduz:,r=61,prox=-1)
+62 : == -> (reduz:,r=61,prox=-1)
+62 : != -> (reduz:,r=61,prox=-1)
+62 : <= -> (reduz:,r=61,prox=-1)
+62 : >= -> (reduz:,r=61,prox=-1)
+62 : + -> (reduz:,r=61,prox=-1)
+62 : - -> (reduz:,r=61,prox=-1)
+62 : * -> (reduz:,r=61,prox=-1)
+62 : / -> (reduz:,r=61,prox=-1)
+62 : % -> (reduz:,r=61,prox=-1)
+63 : < -> (reduz:,r=64,prox=-1)
+63 : > -> (reduz:,r=64,prox=-1)
+63 : ; -> (reduz:,r=64,prox=-1)
+63 : , -> (reduz:,r=64,prox=-1)
+63 : ) -> (reduz:,r=64,prox=-1)
+63 : ] -> (reduz:,r=64,prox=-1)
+63 : || -> (reduz:,r=64,prox=-1)
+63 : && -> (reduz:,r=64,prox=-1)
+63 : == -> (reduz:,r=64,prox=-1)
+63 : != -> (reduz:,r=64,prox=-1)
+63 : <= -> (reduz:,r=64,prox=-1)
+63 : >= -> (reduz:,r=64,prox=-1)
+63 : + -> (reduz:,r=64,prox=-1)
+63 : - -> (reduz:,r=64,prox=-1)
+63 : * -> (reduz:,r=64,prox=-1)
+63 : / -> (reduz:,r=64,prox=-1)
+63 : % -> (reduz:,r=64,prox=-1)
+64 : ID -> (shift:,r=-1,prox=80)
+64 : ( -> (shift:,r=-1,prox=64)
+64 : NUM_INT -> (shift:,r=-1,prox=61)
+64 : NUM_DEC -> (shift:,r=-1,prox=62)
+64 : ! -> (shift:,r=-1,prox=65)
+64 : Exp -> (goto:,r=-1,prox=96)
+64 : ExpAnd -> (goto:,r=-1,prox=55)
+64 : ExpEq -> (goto:,r=-1,prox=56)
+64 : ExpRel -> (goto:,r=-1,prox=57)
+64 : ExpAdd -> (goto:,r=-1,prox=58)
+64 : ExpMult -> (goto:,r=-1,prox=59)
+64 : Fator -> (goto:,r=-1,prox=60)
+64 : Acesso -> (goto:,r=-1,prox=81)
+64 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+65 : ID -> (shift:,r=-1,prox=80)
+65 : ( -> (shift:,r=-1,prox=64)
+65 : NUM_INT -> (shift:,r=-1,prox=61)
+65 : NUM_DEC -> (shift:,r=-1,prox=62)
+65 : ! -> (shift:,r=-1,prox=65)
+65 : Fator -> (goto:,r=-1,prox=97)
+65 : Acesso -> (goto:,r=-1,prox=81)
+65 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+66 : , -> (reduz:,r=21,prox=-1)
+66 : ) -> (reduz:,r=21,prox=-1)
+67 : # -> (reduz:,r=22,prox=-1)
+67 : ID -> (reduz:,r=22,prox=-1)
+67 : typedef -> (reduz:,r=22,prox=-1)
+67 : } -> (reduz:,r=22,prox=-1)
+67 : int -> (reduz:,r=22,prox=-1)
+67 : double -> (reduz:,r=22,prox=-1)
+67 : ( -> (reduz:,r=22,prox=-1)
+67 : if -> (reduz:,r=22,prox=-1)
+67 : else -> (reduz:,r=22,prox=-1)
+67 : while -> (reduz:,r=22,prox=-1)
+67 : for -> (reduz:,r=22,prox=-1)
+67 : return -> (reduz:,r=22,prox=-1)
+67 : NUM_INT -> (reduz:,r=22,prox=-1)
+67 : NUM_DEC -> (reduz:,r=22,prox=-1)
+67 : ! -> (reduz:,r=22,prox=-1)
+67 : $ -> (reduz:,r=22,prox=-1)
+68 : } -> (reduz:,r=23,prox=-1)
+69 : ID -> (shift:,r=-1,prox=80)
+69 : ( -> (shift:,r=-1,prox=64)
+69 : NUM_INT -> (shift:,r=-1,prox=61)
+69 : NUM_DEC -> (shift:,r=-1,prox=62)
+69 : ! -> (shift:,r=-1,prox=65)
+69 : Exp -> (goto:,r=-1,prox=98)
+69 : ExpAnd -> (goto:,r=-1,prox=55)
+69 : ExpEq -> (goto:,r=-1,prox=56)
+69 : ExpRel -> (goto:,r=-1,prox=57)
+69 : ExpAdd -> (goto:,r=-1,prox=58)
+69 : ExpMult -> (goto:,r=-1,prox=59)
+69 : Fator -> (goto:,r=-1,prox=60)
+69 : Acesso -> (goto:,r=-1,prox=81)
+69 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+70 : ID -> (shift:,r=-1,prox=80)
+70 : ( -> (shift:,r=-1,prox=64)
+70 : NUM_INT -> (shift:,r=-1,prox=61)
+70 : NUM_DEC -> (shift:,r=-1,prox=62)
+70 : ! -> (shift:,r=-1,prox=65)
+70 : Exp -> (goto:,r=-1,prox=99)
+70 : ExpAnd -> (goto:,r=-1,prox=55)
+70 : ExpEq -> (goto:,r=-1,prox=56)
+70 : ExpRel -> (goto:,r=-1,prox=57)
+70 : ExpAdd -> (goto:,r=-1,prox=58)
+70 : ExpMult -> (goto:,r=-1,prox=59)
+70 : Fator -> (goto:,r=-1,prox=60)
+70 : Acesso -> (goto:,r=-1,prox=81)
+70 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+71 : ID -> (shift:,r=-1,prox=100)
+72 : ID -> (shift:,r=-1,prox=80)
+72 : ( -> (shift:,r=-1,prox=64)
+72 : ) -> (reduz:,r=73,prox=-1)
+72 : NUM_INT -> (shift:,r=-1,prox=61)
+72 : NUM_DEC -> (shift:,r=-1,prox=62)
+72 : ! -> (shift:,r=-1,prox=65)
+72 : Exp -> (goto:,r=-1,prox=102)
+72 : ExpAnd -> (goto:,r=-1,prox=55)
+72 : ExpEq -> (goto:,r=-1,prox=56)
+72 : ExpRel -> (goto:,r=-1,prox=57)
+72 : ExpAdd -> (goto:,r=-1,prox=58)
+72 : ExpMult -> (goto:,r=-1,prox=59)
+72 : Fator -> (goto:,r=-1,prox=60)
+72 : Acesso -> (goto:,r=-1,prox=81)
+72 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+72 : ListaArgs -> (goto:,r=-1,prox=101)
+73 : ID -> (shift:,r=-1,prox=80)
+73 : ( -> (shift:,r=-1,prox=64)
+73 : NUM_INT -> (shift:,r=-1,prox=61)
+73 : NUM_DEC -> (shift:,r=-1,prox=62)
+73 : ! -> (shift:,r=-1,prox=65)
+73 : Exp -> (goto:,r=-1,prox=103)
+73 : ExpAnd -> (goto:,r=-1,prox=55)
+73 : ExpEq -> (goto:,r=-1,prox=56)
+73 : ExpRel -> (goto:,r=-1,prox=57)
+73 : ExpAdd -> (goto:,r=-1,prox=58)
+73 : ExpMult -> (goto:,r=-1,prox=59)
+73 : Fator -> (goto:,r=-1,prox=60)
+73 : Acesso -> (goto:,r=-1,prox=81)
+73 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+74 : ID -> (shift:,r=-1,prox=104)
+75 : ID -> (shift:,r=-1,prox=80)
+75 : ( -> (shift:,r=-1,prox=64)
+75 : NUM_INT -> (shift:,r=-1,prox=61)
+75 : NUM_DEC -> (shift:,r=-1,prox=62)
+75 : ! -> (shift:,r=-1,prox=65)
+75 : Exp -> (goto:,r=-1,prox=105)
+75 : ExpAnd -> (goto:,r=-1,prox=55)
+75 : ExpEq -> (goto:,r=-1,prox=56)
+75 : ExpRel -> (goto:,r=-1,prox=57)
+75 : ExpAdd -> (goto:,r=-1,prox=58)
+75 : ExpMult -> (goto:,r=-1,prox=59)
+75 : Fator -> (goto:,r=-1,prox=60)
+75 : Acesso -> (goto:,r=-1,prox=81)
+75 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+76 : ID -> (shift:,r=-1,prox=80)
+76 : ( -> (shift:,r=-1,prox=64)
+76 : NUM_INT -> (shift:,r=-1,prox=61)
+76 : NUM_DEC -> (shift:,r=-1,prox=62)
+76 : ! -> (shift:,r=-1,prox=65)
+76 : Exp -> (goto:,r=-1,prox=106)
+76 : ExpAnd -> (goto:,r=-1,prox=55)
+76 : ExpEq -> (goto:,r=-1,prox=56)
+76 : ExpRel -> (goto:,r=-1,prox=57)
+76 : ExpAdd -> (goto:,r=-1,prox=58)
+76 : ExpMult -> (goto:,r=-1,prox=59)
+76 : Fator -> (goto:,r=-1,prox=60)
+76 : Acesso -> (goto:,r=-1,prox=81)
+76 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+77 : ID -> (shift:,r=-1,prox=11)
+77 : int -> (shift:,r=-1,prox=9)
+77 : double -> (shift:,r=-1,prox=10)
+77 : Tipo -> (goto:,r=-1,prox=22)
+77 : DeclaracaoVar -> (goto:,r=-1,prox=107)
+78 : ; -> (shift:,r=-1,prox=108)
+78 : || -> (shift:,r=-1,prox=83)
+79 : ID -> (reduz:,r=33,prox=-1)
+79 : } -> (reduz:,r=33,prox=-1)
+79 : int -> (reduz:,r=33,prox=-1)
+79 : double -> (reduz:,r=33,prox=-1)
+79 : ( -> (reduz:,r=33,prox=-1)
+79 : if -> (reduz:,r=33,prox=-1)
+79 : while -> (reduz:,r=33,prox=-1)
+79 : for -> (reduz:,r=33,prox=-1)
+79 : return -> (reduz:,r=33,prox=-1)
+79 : NUM_INT -> (reduz:,r=33,prox=-1)
+79 : NUM_DEC -> (reduz:,r=33,prox=-1)
+79 : ! -> (reduz:,r=33,prox=-1)
+80 : < -> (reduz:,r=62,prox=-1)
+80 : . -> (shift:,r=-1,prox=71)
+80 : > -> (reduz:,r=62,prox=-1)
+80 : ; -> (reduz:,r=62,prox=-1)
+80 : , -> (reduz:,r=62,prox=-1)
+80 : ( -> (shift:,r=-1,prox=72)
+80 : ) -> (reduz:,r=62,prox=-1)
+80 : [ -> (shift:,r=-1,prox=70)
+80 : ] -> (reduz:,r=62,prox=-1)
+80 : || -> (reduz:,r=62,prox=-1)
+80 : && -> (reduz:,r=62,prox=-1)
+80 : == -> (reduz:,r=62,prox=-1)
+80 : != -> (reduz:,r=62,prox=-1)
+80 : <= -> (reduz:,r=62,prox=-1)
+80 : >= -> (reduz:,r=62,prox=-1)
+80 : + -> (reduz:,r=62,prox=-1)
+80 : - -> (reduz:,r=62,prox=-1)
+80 : * -> (reduz:,r=62,prox=-1)
+80 : / -> (reduz:,r=62,prox=-1)
+80 : % -> (reduz:,r=62,prox=-1)
+81 : < -> (reduz:,r=63,prox=-1)
+81 : . -> (shift:,r=-1,prox=74)
+81 : > -> (reduz:,r=63,prox=-1)
+81 : ; -> (reduz:,r=63,prox=-1)
+81 : , -> (reduz:,r=63,prox=-1)
+81 : ) -> (reduz:,r=63,prox=-1)
+81 : ] -> (reduz:,r=63,prox=-1)
+81 : || -> (reduz:,r=63,prox=-1)
+81 : && -> (reduz:,r=63,prox=-1)
+81 : == -> (reduz:,r=63,prox=-1)
+81 : != -> (reduz:,r=63,prox=-1)
+81 : <= -> (reduz:,r=63,prox=-1)
+81 : >= -> (reduz:,r=63,prox=-1)
+81 : + -> (reduz:,r=63,prox=-1)
+81 : - -> (reduz:,r=63,prox=-1)
+81 : * -> (reduz:,r=63,prox=-1)
+81 : / -> (reduz:,r=63,prox=-1)
+81 : % -> (reduz:,r=63,prox=-1)
+82 : ID -> (reduz:,r=34,prox=-1)
+82 : } -> (reduz:,r=34,prox=-1)
+82 : int -> (reduz:,r=34,prox=-1)
+82 : double -> (reduz:,r=34,prox=-1)
+82 : ( -> (reduz:,r=34,prox=-1)
+82 : if -> (reduz:,r=34,prox=-1)
+82 : while -> (reduz:,r=34,prox=-1)
+82 : for -> (reduz:,r=34,prox=-1)
+82 : return -> (reduz:,r=34,prox=-1)
+82 : NUM_INT -> (reduz:,r=34,prox=-1)
+82 : NUM_DEC -> (reduz:,r=34,prox=-1)
+82 : ! -> (reduz:,r=34,prox=-1)
+83 : ID -> (shift:,r=-1,prox=80)
+83 : ( -> (shift:,r=-1,prox=64)
+83 : NUM_INT -> (shift:,r=-1,prox=61)
+83 : NUM_DEC -> (shift:,r=-1,prox=62)
+83 : ! -> (shift:,r=-1,prox=65)
+83 : ExpAnd -> (goto:,r=-1,prox=109)
+83 : ExpEq -> (goto:,r=-1,prox=56)
+83 : ExpRel -> (goto:,r=-1,prox=57)
+83 : ExpAdd -> (goto:,r=-1,prox=58)
+83 : ExpMult -> (goto:,r=-1,prox=59)
+83 : Fator -> (goto:,r=-1,prox=60)
+83 : Acesso -> (goto:,r=-1,prox=81)
+83 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+84 : ID -> (shift:,r=-1,prox=80)
+84 : ( -> (shift:,r=-1,prox=64)
+84 : NUM_INT -> (shift:,r=-1,prox=61)
+84 : NUM_DEC -> (shift:,r=-1,prox=62)
+84 : ! -> (shift:,r=-1,prox=65)
+84 : ExpEq -> (goto:,r=-1,prox=110)
+84 : ExpRel -> (goto:,r=-1,prox=57)
+84 : ExpAdd -> (goto:,r=-1,prox=58)
+84 : ExpMult -> (goto:,r=-1,prox=59)
+84 : Fator -> (goto:,r=-1,prox=60)
+84 : Acesso -> (goto:,r=-1,prox=81)
+84 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+85 : ID -> (shift:,r=-1,prox=80)
+85 : ( -> (shift:,r=-1,prox=64)
+85 : NUM_INT -> (shift:,r=-1,prox=61)
+85 : NUM_DEC -> (shift:,r=-1,prox=62)
+85 : ! -> (shift:,r=-1,prox=65)
+85 : ExpRel -> (goto:,r=-1,prox=111)
+85 : ExpAdd -> (goto:,r=-1,prox=58)
+85 : ExpMult -> (goto:,r=-1,prox=59)
+85 : Fator -> (goto:,r=-1,prox=60)
+85 : Acesso -> (goto:,r=-1,prox=81)
+85 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+86 : ID -> (shift:,r=-1,prox=80)
+86 : ( -> (shift:,r=-1,prox=64)
+86 : NUM_INT -> (shift:,r=-1,prox=61)
+86 : NUM_DEC -> (shift:,r=-1,prox=62)
+86 : ! -> (shift:,r=-1,prox=65)
+86 : ExpRel -> (goto:,r=-1,prox=112)
+86 : ExpAdd -> (goto:,r=-1,prox=58)
+86 : ExpMult -> (goto:,r=-1,prox=59)
+86 : Fator -> (goto:,r=-1,prox=60)
+86 : Acesso -> (goto:,r=-1,prox=81)
+86 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+87 : ID -> (shift:,r=-1,prox=80)
+87 : ( -> (shift:,r=-1,prox=64)
+87 : NUM_INT -> (shift:,r=-1,prox=61)
+87 : NUM_DEC -> (shift:,r=-1,prox=62)
+87 : ! -> (shift:,r=-1,prox=65)
+87 : ExpAdd -> (goto:,r=-1,prox=113)
+87 : ExpMult -> (goto:,r=-1,prox=59)
+87 : Fator -> (goto:,r=-1,prox=60)
+87 : Acesso -> (goto:,r=-1,prox=81)
+87 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+88 : ID -> (shift:,r=-1,prox=80)
+88 : ( -> (shift:,r=-1,prox=64)
+88 : NUM_INT -> (shift:,r=-1,prox=61)
+88 : NUM_DEC -> (shift:,r=-1,prox=62)
+88 : ! -> (shift:,r=-1,prox=65)
+88 : ExpAdd -> (goto:,r=-1,prox=114)
+88 : ExpMult -> (goto:,r=-1,prox=59)
+88 : Fator -> (goto:,r=-1,prox=60)
+88 : Acesso -> (goto:,r=-1,prox=81)
+88 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+89 : ID -> (shift:,r=-1,prox=80)
+89 : ( -> (shift:,r=-1,prox=64)
+89 : NUM_INT -> (shift:,r=-1,prox=61)
+89 : NUM_DEC -> (shift:,r=-1,prox=62)
+89 : ! -> (shift:,r=-1,prox=65)
+89 : ExpAdd -> (goto:,r=-1,prox=115)
+89 : ExpMult -> (goto:,r=-1,prox=59)
+89 : Fator -> (goto:,r=-1,prox=60)
+89 : Acesso -> (goto:,r=-1,prox=81)
+89 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+90 : ID -> (shift:,r=-1,prox=80)
+90 : ( -> (shift:,r=-1,prox=64)
+90 : NUM_INT -> (shift:,r=-1,prox=61)
+90 : NUM_DEC -> (shift:,r=-1,prox=62)
+90 : ! -> (shift:,r=-1,prox=65)
+90 : ExpAdd -> (goto:,r=-1,prox=116)
+90 : ExpMult -> (goto:,r=-1,prox=59)
+90 : Fator -> (goto:,r=-1,prox=60)
+90 : Acesso -> (goto:,r=-1,prox=81)
+90 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+91 : ID -> (shift:,r=-1,prox=80)
+91 : ( -> (shift:,r=-1,prox=64)
+91 : NUM_INT -> (shift:,r=-1,prox=61)
+91 : NUM_DEC -> (shift:,r=-1,prox=62)
+91 : ! -> (shift:,r=-1,prox=65)
+91 : ExpMult -> (goto:,r=-1,prox=117)
+91 : Fator -> (goto:,r=-1,prox=60)
+91 : Acesso -> (goto:,r=-1,prox=81)
+91 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+92 : ID -> (shift:,r=-1,prox=80)
+92 : ( -> (shift:,r=-1,prox=64)
+92 : NUM_INT -> (shift:,r=-1,prox=61)
+92 : NUM_DEC -> (shift:,r=-1,prox=62)
+92 : ! -> (shift:,r=-1,prox=65)
+92 : ExpMult -> (goto:,r=-1,prox=118)
+92 : Fator -> (goto:,r=-1,prox=60)
+92 : Acesso -> (goto:,r=-1,prox=81)
+92 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+93 : ID -> (shift:,r=-1,prox=80)
+93 : ( -> (shift:,r=-1,prox=64)
+93 : NUM_INT -> (shift:,r=-1,prox=61)
+93 : NUM_DEC -> (shift:,r=-1,prox=62)
+93 : ! -> (shift:,r=-1,prox=65)
+93 : Fator -> (goto:,r=-1,prox=119)
+93 : Acesso -> (goto:,r=-1,prox=81)
+93 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+94 : ID -> (shift:,r=-1,prox=80)
+94 : ( -> (shift:,r=-1,prox=64)
+94 : NUM_INT -> (shift:,r=-1,prox=61)
+94 : NUM_DEC -> (shift:,r=-1,prox=62)
+94 : ! -> (shift:,r=-1,prox=65)
+94 : Fator -> (goto:,r=-1,prox=120)
+94 : Acesso -> (goto:,r=-1,prox=81)
+94 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+95 : ID -> (shift:,r=-1,prox=80)
+95 : ( -> (shift:,r=-1,prox=64)
+95 : NUM_INT -> (shift:,r=-1,prox=61)
+95 : NUM_DEC -> (shift:,r=-1,prox=62)
+95 : ! -> (shift:,r=-1,prox=65)
+95 : Fator -> (goto:,r=-1,prox=121)
+95 : Acesso -> (goto:,r=-1,prox=81)
+95 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+96 : ) -> (shift:,r=-1,prox=122)
+96 : || -> (shift:,r=-1,prox=83)
+97 : < -> (reduz:,r=66,prox=-1)
+97 : > -> (reduz:,r=66,prox=-1)
+97 : ; -> (reduz:,r=66,prox=-1)
+97 : , -> (reduz:,r=66,prox=-1)
+97 : ) -> (reduz:,r=66,prox=-1)
+97 : ] -> (reduz:,r=66,prox=-1)
+97 : || -> (reduz:,r=66,prox=-1)
+97 : && -> (reduz:,r=66,prox=-1)
+97 : == -> (reduz:,r=66,prox=-1)
+97 : != -> (reduz:,r=66,prox=-1)
+97 : <= -> (reduz:,r=66,prox=-1)
+97 : >= -> (reduz:,r=66,prox=-1)
+97 : + -> (reduz:,r=66,prox=-1)
+97 : - -> (reduz:,r=66,prox=-1)
+97 : * -> (reduz:,r=66,prox=-1)
+97 : / -> (reduz:,r=66,prox=-1)
+97 : % -> (reduz:,r=66,prox=-1)
+98 : ; -> (shift:,r=-1,prox=123)
+98 : || -> (shift:,r=-1,prox=83)
+99 : ] -> (shift:,r=-1,prox=124)
+99 : || -> (shift:,r=-1,prox=83)
+100 : < -> (reduz:,r=68,prox=-1)
+100 : . -> (reduz:,r=68,prox=-1)
+100 : > -> (reduz:,r=68,prox=-1)
+100 : ; -> (reduz:,r=68,prox=-1)
+100 : , -> (reduz:,r=68,prox=-1)
+100 : ) -> (reduz:,r=68,prox=-1)
+100 : ] -> (reduz:,r=68,prox=-1)
+100 : = -> (reduz:,r=68,prox=-1)
+100 : || -> (reduz:,r=68,prox=-1)
+100 : && -> (reduz:,r=68,prox=-1)
+100 : == -> (reduz:,r=68,prox=-1)
+100 : != -> (reduz:,r=68,prox=-1)
+100 : <= -> (reduz:,r=68,prox=-1)
+100 : >= -> (reduz:,r=68,prox=-1)
+100 : + -> (reduz:,r=68,prox=-1)
+100 : - -> (reduz:,r=68,prox=-1)
+100 : * -> (reduz:,r=68,prox=-1)
+100 : / -> (reduz:,r=68,prox=-1)
+100 : % -> (reduz:,r=68,prox=-1)
+101 : ) -> (shift:,r=-1,prox=125)
+102 : , -> (shift:,r=-1,prox=126)
+102 : ) -> (reduz:,r=72,prox=-1)
+102 : || -> (shift:,r=-1,prox=83)
+103 : ; -> (shift:,r=-1,prox=127)
+103 : || -> (shift:,r=-1,prox=83)
+104 : < -> (reduz:,r=69,prox=-1)
+104 : . -> (reduz:,r=69,prox=-1)
+104 : > -> (reduz:,r=69,prox=-1)
+104 : ; -> (reduz:,r=69,prox=-1)
+104 : , -> (reduz:,r=69,prox=-1)
+104 : ) -> (reduz:,r=69,prox=-1)
+104 : ] -> (reduz:,r=69,prox=-1)
+104 : = -> (reduz:,r=69,prox=-1)
+104 : || -> (reduz:,r=69,prox=-1)
+104 : && -> (reduz:,r=69,prox=-1)
+104 : == -> (reduz:,r=69,prox=-1)
+104 : != -> (reduz:,r=69,prox=-1)
+104 : <= -> (reduz:,r=69,prox=-1)
+104 : >= -> (reduz:,r=69,prox=-1)
+104 : + -> (reduz:,r=69,prox=-1)
+104 : - -> (reduz:,r=69,prox=-1)
+104 : * -> (reduz:,r=69,prox=-1)
+104 : / -> (reduz:,r=69,prox=-1)
+104 : % -> (reduz:,r=69,prox=-1)
+105 : ) -> (shift:,r=-1,prox=128)
+105 : || -> (shift:,r=-1,prox=83)
+106 : ) -> (shift:,r=-1,prox=129)
+106 : || -> (shift:,r=-1,prox=83)
+107 : ID -> (shift:,r=-1,prox=80)
+107 : ( -> (shift:,r=-1,prox=64)
+107 : NUM_INT -> (shift:,r=-1,prox=61)
+107 : NUM_DEC -> (shift:,r=-1,prox=62)
+107 : ! -> (shift:,r=-1,prox=65)
+107 : Exp -> (goto:,r=-1,prox=130)
+107 : ExpAnd -> (goto:,r=-1,prox=55)
+107 : ExpEq -> (goto:,r=-1,prox=56)
+107 : ExpRel -> (goto:,r=-1,prox=57)
+107 : ExpAdd -> (goto:,r=-1,prox=58)
+107 : ExpMult -> (goto:,r=-1,prox=59)
+107 : Fator -> (goto:,r=-1,prox=60)
+107 : Acesso -> (goto:,r=-1,prox=81)
+107 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+108 : ID -> (reduz:,r=32,prox=-1)
+108 : } -> (reduz:,r=32,prox=-1)
+108 : int -> (reduz:,r=32,prox=-1)
+108 : double -> (reduz:,r=32,prox=-1)
+108 : ( -> (reduz:,r=32,prox=-1)
+108 : if -> (reduz:,r=32,prox=-1)
+108 : while -> (reduz:,r=32,prox=-1)
+108 : for -> (reduz:,r=32,prox=-1)
+108 : return -> (reduz:,r=32,prox=-1)
+108 : NUM_INT -> (reduz:,r=32,prox=-1)
+108 : NUM_DEC -> (reduz:,r=32,prox=-1)
+108 : ! -> (reduz:,r=32,prox=-1)
+109 : ; -> (reduz:,r=41,prox=-1)
+109 : , -> (reduz:,r=41,prox=-1)
+109 : ) -> (reduz:,r=41,prox=-1)
+109 : ] -> (reduz:,r=41,prox=-1)
+109 : || -> (reduz:,r=41,prox=-1)
+109 : && -> (shift:,r=-1,prox=84)
+110 : ; -> (reduz:,r=43,prox=-1)
+110 : , -> (reduz:,r=43,prox=-1)
+110 : ) -> (reduz:,r=43,prox=-1)
+110 : ] -> (reduz:,r=43,prox=-1)
+110 : || -> (reduz:,r=43,prox=-1)
+110 : && -> (reduz:,r=43,prox=-1)
+110 : == -> (shift:,r=-1,prox=85)
+110 : != -> (shift:,r=-1,prox=86)
+111 : < -> (shift:,r=-1,prox=87)
+111 : > -> (shift:,r=-1,prox=89)
+111 : ; -> (reduz:,r=45,prox=-1)
+111 : , -> (reduz:,r=45,prox=-1)
+111 : ) -> (reduz:,r=45,prox=-1)
+111 : ] -> (reduz:,r=45,prox=-1)
+111 : || -> (reduz:,r=45,prox=-1)
+111 : && -> (reduz:,r=45,prox=-1)
+111 : == -> (reduz:,r=45,prox=-1)
+111 : != -> (reduz:,r=45,prox=-1)
+111 : <= -> (shift:,r=-1,prox=88)
+111 : >= -> (shift:,r=-1,prox=90)
+112 : < -> (shift:,r=-1,prox=87)
+112 : > -> (shift:,r=-1,prox=89)
+112 : ; -> (reduz:,r=46,prox=-1)
+112 : , -> (reduz:,r=46,prox=-1)
+112 : ) -> (reduz:,r=46,prox=-1)
+112 : ] -> (reduz:,r=46,prox=-1)
+112 : || -> (reduz:,r=46,prox=-1)
+112 : && -> (reduz:,r=46,prox=-1)
+112 : == -> (reduz:,r=46,prox=-1)
+112 : != -> (reduz:,r=46,prox=-1)
+112 : <= -> (shift:,r=-1,prox=88)
+112 : >= -> (shift:,r=-1,prox=90)
+113 : < -> (reduz:,r=48,prox=-1)
+113 : > -> (reduz:,r=48,prox=-1)
+113 : ; -> (reduz:,r=48,prox=-1)
+113 : , -> (reduz:,r=48,prox=-1)
+113 : ) -> (reduz:,r=48,prox=-1)
+113 : ] -> (reduz:,r=48,prox=-1)
+113 : || -> (reduz:,r=48,prox=-1)
+113 : && -> (reduz:,r=48,prox=-1)
+113 : == -> (reduz:,r=48,prox=-1)
+113 : != -> (reduz:,r=48,prox=-1)
+113 : <= -> (reduz:,r=48,prox=-1)
+113 : >= -> (reduz:,r=48,prox=-1)
+113 : + -> (shift:,r=-1,prox=91)
+113 : - -> (shift:,r=-1,prox=92)
+114 : < -> (reduz:,r=49,prox=-1)
+114 : > -> (reduz:,r=49,prox=-1)
+114 : ; -> (reduz:,r=49,prox=-1)
+114 : , -> (reduz:,r=49,prox=-1)
+114 : ) -> (reduz:,r=49,prox=-1)
+114 : ] -> (reduz:,r=49,prox=-1)
+114 : || -> (reduz:,r=49,prox=-1)
+114 : && -> (reduz:,r=49,prox=-1)
+114 : == -> (reduz:,r=49,prox=-1)
+114 : != -> (reduz:,r=49,prox=-1)
+114 : <= -> (reduz:,r=49,prox=-1)
+114 : >= -> (reduz:,r=49,prox=-1)
+114 : + -> (shift:,r=-1,prox=91)
+114 : - -> (shift:,r=-1,prox=92)
+115 : < -> (reduz:,r=50,prox=-1)
+115 : > -> (reduz:,r=50,prox=-1)
+115 : ; -> (reduz:,r=50,prox=-1)
+115 : , -> (reduz:,r=50,prox=-1)
+115 : ) -> (reduz:,r=50,prox=-1)
+115 : ] -> (reduz:,r=50,prox=-1)
+115 : || -> (reduz:,r=50,prox=-1)
+115 : && -> (reduz:,r=50,prox=-1)
+115 : == -> (reduz:,r=50,prox=-1)
+115 : != -> (reduz:,r=50,prox=-1)
+115 : <= -> (reduz:,r=50,prox=-1)
+115 : >= -> (reduz:,r=50,prox=-1)
+115 : + -> (shift:,r=-1,prox=91)
+115 : - -> (shift:,r=-1,prox=92)
+116 : < -> (reduz:,r=51,prox=-1)
+116 : > -> (reduz:,r=51,prox=-1)
+116 : ; -> (reduz:,r=51,prox=-1)
+116 : , -> (reduz:,r=51,prox=-1)
+116 : ) -> (reduz:,r=51,prox=-1)
+116 : ] -> (reduz:,r=51,prox=-1)
+116 : || -> (reduz:,r=51,prox=-1)
+116 : && -> (reduz:,r=51,prox=-1)
+116 : == -> (reduz:,r=51,prox=-1)
+116 : != -> (reduz:,r=51,prox=-1)
+116 : <= -> (reduz:,r=51,prox=-1)
+116 : >= -> (reduz:,r=51,prox=-1)
+116 : + -> (shift:,r=-1,prox=91)
+116 : - -> (shift:,r=-1,prox=92)
+117 : < -> (reduz:,r=53,prox=-1)
+117 : > -> (reduz:,r=53,prox=-1)
+117 : ; -> (reduz:,r=53,prox=-1)
+117 : , -> (reduz:,r=53,prox=-1)
+117 : ) -> (reduz:,r=53,prox=-1)
+117 : ] -> (reduz:,r=53,prox=-1)
+117 : || -> (reduz:,r=53,prox=-1)
+117 : && -> (reduz:,r=53,prox=-1)
+117 : == -> (reduz:,r=53,prox=-1)
+117 : != -> (reduz:,r=53,prox=-1)
+117 : <= -> (reduz:,r=53,prox=-1)
+117 : >= -> (reduz:,r=53,prox=-1)
+117 : + -> (reduz:,r=53,prox=-1)
+117 : - -> (reduz:,r=53,prox=-1)
+117 : * -> (shift:,r=-1,prox=93)
+117 : / -> (shift:,r=-1,prox=94)
+117 : % -> (shift:,r=-1,prox=95)
+118 : < -> (reduz:,r=54,prox=-1)
+118 : > -> (reduz:,r=54,prox=-1)
+118 : ; -> (reduz:,r=54,prox=-1)
+118 : , -> (reduz:,r=54,prox=-1)
+118 : ) -> (reduz:,r=54,prox=-1)
+118 : ] -> (reduz:,r=54,prox=-1)
+118 : || -> (reduz:,r=54,prox=-1)
+118 : && -> (reduz:,r=54,prox=-1)
+118 : == -> (reduz:,r=54,prox=-1)
+118 : != -> (reduz:,r=54,prox=-1)
+118 : <= -> (reduz:,r=54,prox=-1)
+118 : >= -> (reduz:,r=54,prox=-1)
+118 : + -> (reduz:,r=54,prox=-1)
+118 : - -> (reduz:,r=54,prox=-1)
+118 : * -> (shift:,r=-1,prox=93)
+118 : / -> (shift:,r=-1,prox=94)
+118 : % -> (shift:,r=-1,prox=95)
+119 : < -> (reduz:,r=56,prox=-1)
+119 : > -> (reduz:,r=56,prox=-1)
+119 : ; -> (reduz:,r=56,prox=-1)
+119 : , -> (reduz:,r=56,prox=-1)
+119 : ) -> (reduz:,r=56,prox=-1)
+119 : ] -> (reduz:,r=56,prox=-1)
+119 : || -> (reduz:,r=56,prox=-1)
+119 : && -> (reduz:,r=56,prox=-1)
+119 : == -> (reduz:,r=56,prox=-1)
+119 : != -> (reduz:,r=56,prox=-1)
+119 : <= -> (reduz:,r=56,prox=-1)
+119 : >= -> (reduz:,r=56,prox=-1)
+119 : + -> (reduz:,r=56,prox=-1)
+119 : - -> (reduz:,r=56,prox=-1)
+119 : * -> (reduz:,r=56,prox=-1)
+119 : / -> (reduz:,r=56,prox=-1)
+119 : % -> (reduz:,r=56,prox=-1)
+120 : < -> (reduz:,r=57,prox=-1)
+120 : > -> (reduz:,r=57,prox=-1)
+120 : ; -> (reduz:,r=57,prox=-1)
+120 : , -> (reduz:,r=57,prox=-1)
+120 : ) -> (reduz:,r=57,prox=-1)
+120 : ] -> (reduz:,r=57,prox=-1)
+120 : || -> (reduz:,r=57,prox=-1)
+120 : && -> (reduz:,r=57,prox=-1)
+120 : == -> (reduz:,r=57,prox=-1)
+120 : != -> (reduz:,r=57,prox=-1)
+120 : <= -> (reduz:,r=57,prox=-1)
+120 : >= -> (reduz:,r=57,prox=-1)
+120 : + -> (reduz:,r=57,prox=-1)
+120 : - -> (reduz:,r=57,prox=-1)
+120 : * -> (reduz:,r=57,prox=-1)
+120 : / -> (reduz:,r=57,prox=-1)
+120 : % -> (reduz:,r=57,prox=-1)
+121 : < -> (reduz:,r=58,prox=-1)
+121 : > -> (reduz:,r=58,prox=-1)
+121 : ; -> (reduz:,r=58,prox=-1)
+121 : , -> (reduz:,r=58,prox=-1)
+121 : ) -> (reduz:,r=58,prox=-1)
+121 : ] -> (reduz:,r=58,prox=-1)
+121 : || -> (reduz:,r=58,prox=-1)
+121 : && -> (reduz:,r=58,prox=-1)
+121 : == -> (reduz:,r=58,prox=-1)
+121 : != -> (reduz:,r=58,prox=-1)
+121 : <= -> (reduz:,r=58,prox=-1)
+121 : >= -> (reduz:,r=58,prox=-1)
+121 : + -> (reduz:,r=58,prox=-1)
+121 : - -> (reduz:,r=58,prox=-1)
+121 : * -> (reduz:,r=58,prox=-1)
+121 : / -> (reduz:,r=58,prox=-1)
+121 : % -> (reduz:,r=58,prox=-1)
+122 : < -> (reduz:,r=65,prox=-1)
+122 : > -> (reduz:,r=65,prox=-1)
+122 : ; -> (reduz:,r=65,prox=-1)
+122 : , -> (reduz:,r=65,prox=-1)
+122 : ) -> (reduz:,r=65,prox=-1)
+122 : ] -> (reduz:,r=65,prox=-1)
+122 : || -> (reduz:,r=65,prox=-1)
+122 : && -> (reduz:,r=65,prox=-1)
+122 : == -> (reduz:,r=65,prox=-1)
+122 : != -> (reduz:,r=65,prox=-1)
+122 : <= -> (reduz:,r=65,prox=-1)
+122 : >= -> (reduz:,r=65,prox=-1)
+122 : + -> (reduz:,r=65,prox=-1)
+122 : - -> (reduz:,r=65,prox=-1)
+122 : * -> (reduz:,r=65,prox=-1)
+122 : / -> (reduz:,r=65,prox=-1)
+122 : % -> (reduz:,r=65,prox=-1)
+123 : ID -> (reduz:,r=26,prox=-1)
+123 : } -> (reduz:,r=26,prox=-1)
+123 : int -> (reduz:,r=26,prox=-1)
+123 : double -> (reduz:,r=26,prox=-1)
+123 : ( -> (reduz:,r=26,prox=-1)
+123 : if -> (reduz:,r=26,prox=-1)
+123 : while -> (reduz:,r=26,prox=-1)
+123 : for -> (reduz:,r=26,prox=-1)
+123 : return -> (reduz:,r=26,prox=-1)
+123 : NUM_INT -> (reduz:,r=26,prox=-1)
+123 : NUM_DEC -> (reduz:,r=26,prox=-1)
+123 : ! -> (reduz:,r=26,prox=-1)
+124 : < -> (reduz:,r=67,prox=-1)
+124 : . -> (reduz:,r=67,prox=-1)
+124 : > -> (reduz:,r=67,prox=-1)
+124 : ; -> (reduz:,r=67,prox=-1)
+124 : , -> (reduz:,r=67,prox=-1)
+124 : ) -> (reduz:,r=67,prox=-1)
+124 : ] -> (reduz:,r=67,prox=-1)
+124 : = -> (reduz:,r=67,prox=-1)
+124 : || -> (reduz:,r=67,prox=-1)
+124 : && -> (reduz:,r=67,prox=-1)
+124 : == -> (reduz:,r=67,prox=-1)
+124 : != -> (reduz:,r=67,prox=-1)
+124 : <= -> (reduz:,r=67,prox=-1)
+124 : >= -> (reduz:,r=67,prox=-1)
+124 : + -> (reduz:,r=67,prox=-1)
+124 : - -> (reduz:,r=67,prox=-1)
+124 : * -> (reduz:,r=67,prox=-1)
+124 : / -> (reduz:,r=67,prox=-1)
+124 : % -> (reduz:,r=67,prox=-1)
+125 : < -> (reduz:,r=70,prox=-1)
+125 : > -> (reduz:,r=70,prox=-1)
+125 : ; -> (reduz:,r=70,prox=-1)
+125 : , -> (reduz:,r=70,prox=-1)
+125 : ) -> (reduz:,r=70,prox=-1)
+125 : ] -> (reduz:,r=70,prox=-1)
+125 : || -> (reduz:,r=70,prox=-1)
+125 : && -> (reduz:,r=70,prox=-1)
+125 : == -> (reduz:,r=70,prox=-1)
+125 : != -> (reduz:,r=70,prox=-1)
+125 : <= -> (reduz:,r=70,prox=-1)
+125 : >= -> (reduz:,r=70,prox=-1)
+125 : + -> (reduz:,r=70,prox=-1)
+125 : - -> (reduz:,r=70,prox=-1)
+125 : * -> (reduz:,r=70,prox=-1)
+125 : / -> (reduz:,r=70,prox=-1)
+125 : % -> (reduz:,r=70,prox=-1)
+126 : ID -> (shift:,r=-1,prox=80)
+126 : ( -> (shift:,r=-1,prox=64)
+126 : ) -> (reduz:,r=73,prox=-1)
+126 : NUM_INT -> (shift:,r=-1,prox=61)
+126 : NUM_DEC -> (shift:,r=-1,prox=62)
+126 : ! -> (shift:,r=-1,prox=65)
+126 : Exp -> (goto:,r=-1,prox=102)
+126 : ExpAnd -> (goto:,r=-1,prox=55)
+126 : ExpEq -> (goto:,r=-1,prox=56)
+126 : ExpRel -> (goto:,r=-1,prox=57)
+126 : ExpAdd -> (goto:,r=-1,prox=58)
+126 : ExpMult -> (goto:,r=-1,prox=59)
+126 : Fator -> (goto:,r=-1,prox=60)
+126 : Acesso -> (goto:,r=-1,prox=81)
+126 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+126 : ListaArgs -> (goto:,r=-1,prox=131)
+127 : ID -> (reduz:,r=27,prox=-1)
+127 : } -> (reduz:,r=27,prox=-1)
+127 : int -> (reduz:,r=27,prox=-1)
+127 : double -> (reduz:,r=27,prox=-1)
+127 : ( -> (reduz:,r=27,prox=-1)
+127 : if -> (reduz:,r=27,prox=-1)
+127 : while -> (reduz:,r=27,prox=-1)
+127 : for -> (reduz:,r=27,prox=-1)
+127 : return -> (reduz:,r=27,prox=-1)
+127 : NUM_INT -> (reduz:,r=27,prox=-1)
+127 : NUM_DEC -> (reduz:,r=27,prox=-1)
+127 : ! -> (reduz:,r=27,prox=-1)
+128 : { -> (shift:,r=-1,prox=39)
+128 : Bloco -> (goto:,r=-1,prox=132)
+129 : { -> (shift:,r=-1,prox=39)
+129 : Bloco -> (goto:,r=-1,prox=133)
+130 : ; -> (shift:,r=-1,prox=134)
+130 : || -> (shift:,r=-1,prox=83)
+131 : ) -> (reduz:,r=71,prox=-1)
+132 : ID -> (reduz:,r=28,prox=-1)
+132 : } -> (reduz:,r=28,prox=-1)
+132 : int -> (reduz:,r=28,prox=-1)
+132 : double -> (reduz:,r=28,prox=-1)
+132 : ( -> (reduz:,r=28,prox=-1)
+132 : if -> (reduz:,r=28,prox=-1)
+132 : else -> (shift:,r=-1,prox=135)
+132 : while -> (reduz:,r=28,prox=-1)
+132 : for -> (reduz:,r=28,prox=-1)
+132 : return -> (reduz:,r=28,prox=-1)
+132 : NUM_INT -> (reduz:,r=28,prox=-1)
+132 : NUM_DEC -> (reduz:,r=28,prox=-1)
+132 : ! -> (reduz:,r=28,prox=-1)
+133 : ID -> (reduz:,r=30,prox=-1)
+133 : } -> (reduz:,r=30,prox=-1)
+133 : int -> (reduz:,r=30,prox=-1)
+133 : double -> (reduz:,r=30,prox=-1)
+133 : ( -> (reduz:,r=30,prox=-1)
+133 : if -> (reduz:,r=30,prox=-1)
+133 : while -> (reduz:,r=30,prox=-1)
+133 : for -> (reduz:,r=30,prox=-1)
+133 : return -> (reduz:,r=30,prox=-1)
+133 : NUM_INT -> (reduz:,r=30,prox=-1)
+133 : NUM_DEC -> (reduz:,r=30,prox=-1)
+133 : ! -> (reduz:,r=30,prox=-1)
+134 : ID -> (shift:,r=-1,prox=137)
+134 : ) -> (reduz:,r=40,prox=-1)
+134 : ++ -> (shift:,r=-1,prox=138)
+134 : -- -> (shift:,r=-1,prox=139)
+134 : Atualizacao -> (goto:,r=-1,prox=136)
+135 : { -> (shift:,r=-1,prox=39)
+135 : Bloco -> (goto:,r=-1,prox=140)
+136 : ) -> (shift:,r=-1,prox=141)
+137 : = -> (shift:,r=-1,prox=142)
+137 : ++ -> (shift:,r=-1,prox=143)
+137 : -- -> (shift:,r=-1,prox=144)
+138 : ID -> (shift:,r=-1,prox=145)
+139 : ID -> (shift:,r=-1,prox=146)
+140 : ID -> (reduz:,r=29,prox=-1)
+140 : } -> (reduz:,r=29,prox=-1)
+140 : int -> (reduz:,r=29,prox=-1)
+140 : double -> (reduz:,r=29,prox=-1)
+140 : ( -> (reduz:,r=29,prox=-1)
+140 : if -> (reduz:,r=29,prox=-1)
+140 : while -> (reduz:,r=29,prox=-1)
+140 : for -> (reduz:,r=29,prox=-1)
+140 : return -> (reduz:,r=29,prox=-1)
+140 : NUM_INT -> (reduz:,r=29,prox=-1)
+140 : NUM_DEC -> (reduz:,r=29,prox=-1)
+140 : ! -> (reduz:,r=29,prox=-1)
+141 : { -> (shift:,r=-1,prox=39)
+141 : Bloco -> (goto:,r=-1,prox=147)
+142 : ID -> (shift:,r=-1,prox=80)
+142 : ( -> (shift:,r=-1,prox=64)
+142 : NUM_INT -> (shift:,r=-1,prox=61)
+142 : NUM_DEC -> (shift:,r=-1,prox=62)
+142 : ! -> (shift:,r=-1,prox=65)
+142 : Exp -> (goto:,r=-1,prox=148)
+142 : ExpAnd -> (goto:,r=-1,prox=55)
+142 : ExpEq -> (goto:,r=-1,prox=56)
+142 : ExpRel -> (goto:,r=-1,prox=57)
+142 : ExpAdd -> (goto:,r=-1,prox=58)
+142 : ExpMult -> (goto:,r=-1,prox=59)
+142 : Fator -> (goto:,r=-1,prox=60)
+142 : Acesso -> (goto:,r=-1,prox=81)
+142 : ChamadaFuncao -> (goto:,r=-1,prox=63)
+143 : ) -> (reduz:,r=38,prox=-1)
+144 : ) -> (reduz:,r=39,prox=-1)
+145 : ) -> (reduz:,r=36,prox=-1)
+146 : ) -> (reduz:,r=37,prox=-1)
+147 : ID -> (reduz:,r=31,prox=-1)
+147 : } -> (reduz:,r=31,prox=-1)
+147 : int -> (reduz:,r=31,prox=-1)
+147 : double -> (reduz:,r=31,prox=-1)
+147 : ( -> (reduz:,r=31,prox=-1)
+147 : if -> (reduz:,r=31,prox=-1)
+147 : while -> (reduz:,r=31,prox=-1)
+147 : for -> (reduz:,r=31,prox=-1)
+147 : return -> (reduz:,r=31,prox=-1)
+147 : NUM_INT -> (reduz:,r=31,prox=-1)
+147 : NUM_DEC -> (reduz:,r=31,prox=-1)
+147 : ! -> (reduz:,r=31,prox=-1)
+148 : ) -> (reduz:,r=35,prox=-1)
+148 : || -> (shift:,r=-1,prox=83)
+Tabela(149)
+0 # : shift 6;
+0 $ : reduce 2;
+0 Elemento : goto 2;
+0 FuncaoDecl : goto 5;
+0 ID : shift 11;
+0 IncludeDecl : goto 3;
+0 ListaElementos : goto 1;
+0 Tipo : goto 8;
+0 TypedefDecl : goto 4;
+0 double : shift 10;
+0 int : shift 9;
+0 typedef : shift 7;
+1 $ : accept;
+2 # : shift 6;
+2 $ : reduce 2;
+2 Elemento : goto 2;
+2 FuncaoDecl : goto 5;
+2 ID : shift 11;
+2 IncludeDecl : goto 3;
+2 ListaElementos : goto 12;
+2 Tipo : goto 8;
+2 TypedefDecl : goto 4;
+2 double : shift 10;
+2 int : shift 9;
+2 typedef : shift 7;
+3 # : reduce 3;
+3 $ : reduce 3;
+3 ID : reduce 3;
+3 double : reduce 3;
+3 int : reduce 3;
+3 typedef : reduce 3;
+4 # : reduce 4;
+4 $ : reduce 4;
+4 ID : reduce 4;
+4 double : reduce 4;
+4 int : reduce 4;
+4 typedef : reduce 4;
+5 # : reduce 5;
+5 $ : reduce 5;
+5 ID : reduce 5;
+5 double : reduce 5;
+5 int : reduce 5;
+5 typedef : reduce 5;
+6 ID : shift 13;
+7 struct : shift 14;
+8 ID : shift 15;
+9 ID : reduce 10;
+10 ID : reduce 11;
+11 ID : reduce 12;
+12 $ : reduce 1;
+13 < : shift 16;
+14 { : shift 17;
+15 ( : shift 18;
+16 ID : shift 19;
+17 DeclaracaoVar : goto 21;
+17 ID : shift 11;
+17 ListaCampos : goto 20;
+17 Tipo : goto 22;
+17 double : shift 10;
+17 int : shift 9;
+17 } : reduce 9;
+18 ) : reduce 19;
+18 ID : shift 11;
+18 ListaParams : goto 23;
+18 Parametro : goto 24;
+18 Tipo : goto 25;
+18 double : shift 10;
+18 int : shift 9;
+19 . : shift 26;
+20 } : shift 27;
+21 DeclaracaoVar : goto 21;
+21 ID : shift 11;
+21 ListaCampos : goto 28;
+21 Tipo : goto 22;
+21 double : shift 10;
+21 int : shift 9;
+21 } : reduce 9;
+22 ID : shift 30;
+22 ListaIDs : goto 29;
+23 ) : shift 31;
+24 ) : reduce 18;
+24 , : shift 32;
+25 ID : shift 33;
+26 ID : shift 34;
+27 ID : shift 35;
+28 } : reduce 8;
+29 ; : shift 36;
+30 , : shift 37;
+30 ; : reduce 15;
+31 Bloco : goto 38;
+31 { : shift 39;
+32 ) : reduce 19;
+32 ID : shift 11;
+32 ListaParams : goto 40;
+32 Parametro : goto 24;
+32 Tipo : goto 25;
+32 double : shift 10;
+32 int : shift 9;
+33 ) : reduce 20;
+33 , : reduce 20;
+33 [ : shift 41;
+34 > : shift 42;
+35 ; : shift 43;
+36 ! : reduce 13;
+36 ( : reduce 13;
+36 ID : reduce 13;
+36 NUM_DEC : reduce 13;
+36 NUM_INT : reduce 13;
+36 double : reduce 13;
+36 for : reduce 13;
+36 if : reduce 13;
+36 int : reduce 13;
+36 return : reduce 13;
+36 while : reduce 13;
+36 } : reduce 13;
+37 ID : shift 30;
+37 ListaIDs : goto 44;
+38 # : reduce 16;
+38 $ : reduce 16;
+38 ID : reduce 16;
+38 double : reduce 16;
+38 int : reduce 16;
+38 typedef : reduce 16;
+39 ! : shift 65;
+39 ( : shift 64;
+39 Acesso : goto 49;
+39 ChamadaFuncao : goto 63;
+39 Comando : goto 46;
+39 DeclaracaoVar : goto 47;
+39 Exp : goto 54;
+39 ExpAdd : goto 58;
+39 ExpAnd : goto 55;
+39 ExpEq : goto 56;
+39 ExpMult : goto 59;
+39 ExpRel : goto 57;
+39 Fator : goto 60;
+39 ID : shift 48;
+39 ListaComandos : goto 45;
+39 NUM_DEC : shift 62;
+39 NUM_INT : shift 61;
+39 Tipo : goto 22;
+39 double : shift 10;
+39 for : shift 52;
+39 if : shift 50;
+39 int : shift 9;
+39 return : shift 53;
+39 while : shift 51;
+39 } : reduce 24;
+40 ) : reduce 17;
+41 ] : shift 66;
+42 # : reduce 6;
+42 $ : reduce 6;
+42 ID : reduce 6;
+42 double : reduce 6;
+42 int : reduce 6;
+42 typedef : reduce 6;
+43 # : reduce 7;
+43 $ : reduce 7;
+43 ID : reduce 7;
+43 double : reduce 7;
+43 int : reduce 7;
+43 typedef : reduce 7;
+44 ; : reduce 14;
+45 } : shift 67;
+46 ! : shift 65;
+46 ( : shift 64;
+46 Acesso : goto 49;
+46 ChamadaFuncao : goto 63;
+46 Comando : goto 46;
+46 DeclaracaoVar : goto 47;
+46 Exp : goto 54;
+46 ExpAdd : goto 58;
+46 ExpAnd : goto 55;
+46 ExpEq : goto 56;
+46 ExpMult : goto 59;
+46 ExpRel : goto 57;
+46 Fator : goto 60;
+46 ID : shift 48;
+46 ListaComandos : goto 68;
+46 NUM_DEC : shift 62;
+46 NUM_INT : shift 61;
+46 Tipo : goto 22;
+46 double : shift 10;
+46 for : shift 52;
+46 if : shift 50;
+46 int : shift 9;
+46 return : shift 53;
+46 while : shift 51;
+46 } : reduce 24;
+47 ! : reduce 25;
+47 ( : reduce 25;
+47 ID : reduce 25;
+47 NUM_DEC : reduce 25;
+47 NUM_INT : reduce 25;
+47 double : reduce 25;
+47 for : reduce 25;
+47 if : reduce 25;
+47 int : reduce 25;
+47 return : reduce 25;
+47 while : reduce 25;
+47 } : reduce 25;
+48 != : reduce 62;
+48 % : reduce 62;
+48 && : reduce 62;
+48 ( : shift 72;
+48 * : reduce 62;
+48 + : reduce 62;
+48 - : reduce 62;
+48 . : shift 71;
+48 / : reduce 62;
+48 ; : reduce 62;
+48 < : reduce 62;
+48 <= : reduce 62;
+48 = : shift 69;
+48 == : reduce 62;
+48 > : reduce 62;
+48 >= : reduce 62;
+48 ID : reduce 12;
+48 [ : shift 70;
+48 || : reduce 62;
+49 != : reduce 63;
+49 % : reduce 63;
+49 && : reduce 63;
+49 * : reduce 63;
+49 + : reduce 63;
+49 - : reduce 63;
+49 . : shift 74;
+49 / : reduce 63;
+49 ; : reduce 63;
+49 < : reduce 63;
+49 <= : reduce 63;
+49 = : shift 73;
+49 == : reduce 63;
+49 > : reduce 63;
+49 >= : reduce 63;
+49 || : reduce 63;
+50 ( : shift 75;
+51 ( : shift 76;
+52 ( : shift 77;
+53 ! : shift 65;
+53 ( : shift 64;
+53 ; : shift 79;
+53 Acesso : goto 81;
+53 ChamadaFuncao : goto 63;
+53 Exp : goto 78;
+53 ExpAdd : goto 58;
+53 ExpAnd : goto 55;
+53 ExpEq : goto 56;
+53 ExpMult : goto 59;
+53 ExpRel : goto 57;
+53 Fator : goto 60;
+53 ID : shift 80;
+53 NUM_DEC : shift 62;
+53 NUM_INT : shift 61;
+54 ; : shift 82;
+54 || : shift 83;
+55 && : shift 84;
+55 ) : reduce 42;
+55 , : reduce 42;
+55 ; : reduce 42;
+55 ] : reduce 42;
+55 || : reduce 42;
+56 != : shift 86;
+56 && : reduce 44;
+56 ) : reduce 44;
+56 , : reduce 44;
+56 ; : reduce 44;
+56 == : shift 85;
+56 ] : reduce 44;
+56 || : reduce 44;
+57 != : reduce 47;
+57 && : reduce 47;
+57 ) : reduce 47;
+57 , : reduce 47;
+57 ; : reduce 47;
+57 < : shift 87;
+57 <= : shift 88;
+57 == : reduce 47;
+57 > : shift 89;
+57 >= : shift 90;
+57 ] : reduce 47;
+57 || : reduce 47;
+58 != : reduce 52;
+58 && : reduce 52;
+58 ) : reduce 52;
+58 + : shift 91;
+58 , : reduce 52;
+58 - : shift 92;
+58 ; : reduce 52;
+58 < : reduce 52;
+58 <= : reduce 52;
+58 == : reduce 52;
+58 > : reduce 52;
+58 >= : reduce 52;
+58 ] : reduce 52;
+58 || : reduce 52;
+59 != : reduce 55;
+59 % : shift 95;
+59 && : reduce 55;
+59 ) : reduce 55;
+59 * : shift 93;
+59 + : reduce 55;
+59 , : reduce 55;
+59 - : reduce 55;
+59 / : shift 94;
+59 ; : reduce 55;
+59 < : reduce 55;
+59 <= : reduce 55;
+59 == : reduce 55;
+59 > : reduce 55;
+59 >= : reduce 55;
+59 ] : reduce 55;
+59 || : reduce 55;
+60 != : reduce 59;
+60 % : reduce 59;
+60 && : reduce 59;
+60 ) : reduce 59;
+60 * : reduce 59;
+60 + : reduce 59;
+60 , : reduce 59;
+60 - : reduce 59;
+60 / : reduce 59;
+60 ; : reduce 59;
+60 < : reduce 59;
+60 <= : reduce 59;
+60 == : reduce 59;
+60 > : reduce 59;
+60 >= : reduce 59;
+60 ] : reduce 59;
+60 || : reduce 59;
+61 != : reduce 60;
+61 % : reduce 60;
+61 && : reduce 60;
+61 ) : reduce 60;
+61 * : reduce 60;
+61 + : reduce 60;
+61 , : reduce 60;
+61 - : reduce 60;
+61 / : reduce 60;
+61 ; : reduce 60;
+61 < : reduce 60;
+61 <= : reduce 60;
+61 == : reduce 60;
+61 > : reduce 60;
+61 >= : reduce 60;
+61 ] : reduce 60;
+61 || : reduce 60;
+62 != : reduce 61;
+62 % : reduce 61;
+62 && : reduce 61;
+62 ) : reduce 61;
+62 * : reduce 61;
+62 + : reduce 61;
+62 , : reduce 61;
+62 - : reduce 61;
+62 / : reduce 61;
+62 ; : reduce 61;
+62 < : reduce 61;
+62 <= : reduce 61;
+62 == : reduce 61;
+62 > : reduce 61;
+62 >= : reduce 61;
+62 ] : reduce 61;
+62 || : reduce 61;
+63 != : reduce 64;
+63 % : reduce 64;
+63 && : reduce 64;
+63 ) : reduce 64;
+63 * : reduce 64;
+63 + : reduce 64;
+63 , : reduce 64;
+63 - : reduce 64;
+63 / : reduce 64;
+63 ; : reduce 64;
+63 < : reduce 64;
+63 <= : reduce 64;
+63 == : reduce 64;
+63 > : reduce 64;
+63 >= : reduce 64;
+63 ] : reduce 64;
+63 || : reduce 64;
+64 ! : shift 65;
+64 ( : shift 64;
+64 Acesso : goto 81;
+64 ChamadaFuncao : goto 63;
+64 Exp : goto 96;
+64 ExpAdd : goto 58;
+64 ExpAnd : goto 55;
+64 ExpEq : goto 56;
+64 ExpMult : goto 59;
+64 ExpRel : goto 57;
+64 Fator : goto 60;
+64 ID : shift 80;
+64 NUM_DEC : shift 62;
+64 NUM_INT : shift 61;
+65 ! : shift 65;
+65 ( : shift 64;
+65 Acesso : goto 81;
+65 ChamadaFuncao : goto 63;
+65 Fator : goto 97;
+65 ID : shift 80;
+65 NUM_DEC : shift 62;
+65 NUM_INT : shift 61;
+66 ) : reduce 21;
+66 , : reduce 21;
+67 ! : reduce 22;
+67 # : reduce 22;
+67 $ : reduce 22;
+67 ( : reduce 22;
+67 ID : reduce 22;
+67 NUM_DEC : reduce 22;
+67 NUM_INT : reduce 22;
+67 double : reduce 22;
+67 else : reduce 22;
+67 for : reduce 22;
+67 if : reduce 22;
+67 int : reduce 22;
+67 return : reduce 22;
+67 typedef : reduce 22;
+67 while : reduce 22;
+67 } : reduce 22;
+68 } : reduce 23;
+69 ! : shift 65;
+69 ( : shift 64;
+69 Acesso : goto 81;
+69 ChamadaFuncao : goto 63;
+69 Exp : goto 98;
+69 ExpAdd : goto 58;
+69 ExpAnd : goto 55;
+69 ExpEq : goto 56;
+69 ExpMult : goto 59;
+69 ExpRel : goto 57;
+69 Fator : goto 60;
+69 ID : shift 80;
+69 NUM_DEC : shift 62;
+69 NUM_INT : shift 61;
+70 ! : shift 65;
+70 ( : shift 64;
+70 Acesso : goto 81;
+70 ChamadaFuncao : goto 63;
+70 Exp : goto 99;
+70 ExpAdd : goto 58;
+70 ExpAnd : goto 55;
+70 ExpEq : goto 56;
+70 ExpMult : goto 59;
+70 ExpRel : goto 57;
+70 Fator : goto 60;
+70 ID : shift 80;
+70 NUM_DEC : shift 62;
+70 NUM_INT : shift 61;
+71 ID : shift 100;
+72 ! : shift 65;
+72 ( : shift 64;
+72 ) : reduce 73;
+72 Acesso : goto 81;
+72 ChamadaFuncao : goto 63;
+72 Exp : goto 102;
+72 ExpAdd : goto 58;
+72 ExpAnd : goto 55;
+72 ExpEq : goto 56;
+72 ExpMult : goto 59;
+72 ExpRel : goto 57;
+72 Fator : goto 60;
+72 ID : shift 80;
+72 ListaArgs : goto 101;
+72 NUM_DEC : shift 62;
+72 NUM_INT : shift 61;
+73 ! : shift 65;
+73 ( : shift 64;
+73 Acesso : goto 81;
+73 ChamadaFuncao : goto 63;
+73 Exp : goto 103;
+73 ExpAdd : goto 58;
+73 ExpAnd : goto 55;
+73 ExpEq : goto 56;
+73 ExpMult : goto 59;
+73 ExpRel : goto 57;
+73 Fator : goto 60;
+73 ID : shift 80;
+73 NUM_DEC : shift 62;
+73 NUM_INT : shift 61;
+74 ID : shift 104;
+75 ! : shift 65;
+75 ( : shift 64;
+75 Acesso : goto 81;
+75 ChamadaFuncao : goto 63;
+75 Exp : goto 105;
+75 ExpAdd : goto 58;
+75 ExpAnd : goto 55;
+75 ExpEq : goto 56;
+75 ExpMult : goto 59;
+75 ExpRel : goto 57;
+75 Fator : goto 60;
+75 ID : shift 80;
+75 NUM_DEC : shift 62;
+75 NUM_INT : shift 61;
+76 ! : shift 65;
+76 ( : shift 64;
+76 Acesso : goto 81;
+76 ChamadaFuncao : goto 63;
+76 Exp : goto 106;
+76 ExpAdd : goto 58;
+76 ExpAnd : goto 55;
+76 ExpEq : goto 56;
+76 ExpMult : goto 59;
+76 ExpRel : goto 57;
+76 Fator : goto 60;
+76 ID : shift 80;
+76 NUM_DEC : shift 62;
+76 NUM_INT : shift 61;
+77 DeclaracaoVar : goto 107;
+77 ID : shift 11;
+77 Tipo : goto 22;
+77 double : shift 10;
+77 int : shift 9;
+78 ; : shift 108;
+78 || : shift 83;
+79 ! : reduce 33;
+79 ( : reduce 33;
+79 ID : reduce 33;
+79 NUM_DEC : reduce 33;
+79 NUM_INT : reduce 33;
+79 double : reduce 33;
+79 for : reduce 33;
+79 if : reduce 33;
+79 int : reduce 33;
+79 return : reduce 33;
+79 while : reduce 33;
+79 } : reduce 33;
+80 != : reduce 62;
+80 % : reduce 62;
+80 && : reduce 62;
+80 ( : shift 72;
+80 ) : reduce 62;
+80 * : reduce 62;
+80 + : reduce 62;
+80 , : reduce 62;
+80 - : reduce 62;
+80 . : shift 71;
+80 / : reduce 62;
+80 ; : reduce 62;
+80 < : reduce 62;
+80 <= : reduce 62;
+80 == : reduce 62;
+80 > : reduce 62;
+80 >= : reduce 62;
+80 [ : shift 70;
+80 ] : reduce 62;
+80 || : reduce 62;
+81 != : reduce 63;
+81 % : reduce 63;
+81 && : reduce 63;
+81 ) : reduce 63;
+81 * : reduce 63;
+81 + : reduce 63;
+81 , : reduce 63;
+81 - : reduce 63;
+81 . : shift 74;
+81 / : reduce 63;
+81 ; : reduce 63;
+81 < : reduce 63;
+81 <= : reduce 63;
+81 == : reduce 63;
+81 > : reduce 63;
+81 >= : reduce 63;
+81 ] : reduce 63;
+81 || : reduce 63;
+82 ! : reduce 34;
+82 ( : reduce 34;
+82 ID : reduce 34;
+82 NUM_DEC : reduce 34;
+82 NUM_INT : reduce 34;
+82 double : reduce 34;
+82 for : reduce 34;
+82 if : reduce 34;
+82 int : reduce 34;
+82 return : reduce 34;
+82 while : reduce 34;
+82 } : reduce 34;
+83 ! : shift 65;
+83 ( : shift 64;
+83 Acesso : goto 81;
+83 ChamadaFuncao : goto 63;
+83 ExpAdd : goto 58;
+83 ExpAnd : goto 109;
+83 ExpEq : goto 56;
+83 ExpMult : goto 59;
+83 ExpRel : goto 57;
+83 Fator : goto 60;
+83 ID : shift 80;
+83 NUM_DEC : shift 62;
+83 NUM_INT : shift 61;
+84 ! : shift 65;
+84 ( : shift 64;
+84 Acesso : goto 81;
+84 ChamadaFuncao : goto 63;
+84 ExpAdd : goto 58;
+84 ExpEq : goto 110;
+84 ExpMult : goto 59;
+84 ExpRel : goto 57;
+84 Fator : goto 60;
+84 ID : shift 80;
+84 NUM_DEC : shift 62;
+84 NUM_INT : shift 61;
+85 ! : shift 65;
+85 ( : shift 64;
+85 Acesso : goto 81;
+85 ChamadaFuncao : goto 63;
+85 ExpAdd : goto 58;
+85 ExpMult : goto 59;
+85 ExpRel : goto 111;
+85 Fator : goto 60;
+85 ID : shift 80;
+85 NUM_DEC : shift 62;
+85 NUM_INT : shift 61;
+86 ! : shift 65;
+86 ( : shift 64;
+86 Acesso : goto 81;
+86 ChamadaFuncao : goto 63;
+86 ExpAdd : goto 58;
+86 ExpMult : goto 59;
+86 ExpRel : goto 112;
+86 Fator : goto 60;
+86 ID : shift 80;
+86 NUM_DEC : shift 62;
+86 NUM_INT : shift 61;
+87 ! : shift 65;
+87 ( : shift 64;
+87 Acesso : goto 81;
+87 ChamadaFuncao : goto 63;
+87 ExpAdd : goto 113;
+87 ExpMult : goto 59;
+87 Fator : goto 60;
+87 ID : shift 80;
+87 NUM_DEC : shift 62;
+87 NUM_INT : shift 61;
+88 ! : shift 65;
+88 ( : shift 64;
+88 Acesso : goto 81;
+88 ChamadaFuncao : goto 63;
+88 ExpAdd : goto 114;
+88 ExpMult : goto 59;
+88 Fator : goto 60;
+88 ID : shift 80;
+88 NUM_DEC : shift 62;
+88 NUM_INT : shift 61;
+89 ! : shift 65;
+89 ( : shift 64;
+89 Acesso : goto 81;
+89 ChamadaFuncao : goto 63;
+89 ExpAdd : goto 115;
+89 ExpMult : goto 59;
+89 Fator : goto 60;
+89 ID : shift 80;
+89 NUM_DEC : shift 62;
+89 NUM_INT : shift 61;
+90 ! : shift 65;
+90 ( : shift 64;
+90 Acesso : goto 81;
+90 ChamadaFuncao : goto 63;
+90 ExpAdd : goto 116;
+90 ExpMult : goto 59;
+90 Fator : goto 60;
+90 ID : shift 80;
+90 NUM_DEC : shift 62;
+90 NUM_INT : shift 61;
+91 ! : shift 65;
+91 ( : shift 64;
+91 Acesso : goto 81;
+91 ChamadaFuncao : goto 63;
+91 ExpMult : goto 117;
+91 Fator : goto 60;
+91 ID : shift 80;
+91 NUM_DEC : shift 62;
+91 NUM_INT : shift 61;
+92 ! : shift 65;
+92 ( : shift 64;
+92 Acesso : goto 81;
+92 ChamadaFuncao : goto 63;
+92 ExpMult : goto 118;
+92 Fator : goto 60;
+92 ID : shift 80;
+92 NUM_DEC : shift 62;
+92 NUM_INT : shift 61;
+93 ! : shift 65;
+93 ( : shift 64;
+93 Acesso : goto 81;
+93 ChamadaFuncao : goto 63;
+93 Fator : goto 119;
+93 ID : shift 80;
+93 NUM_DEC : shift 62;
+93 NUM_INT : shift 61;
+94 ! : shift 65;
+94 ( : shift 64;
+94 Acesso : goto 81;
+94 ChamadaFuncao : goto 63;
+94 Fator : goto 120;
+94 ID : shift 80;
+94 NUM_DEC : shift 62;
+94 NUM_INT : shift 61;
+95 ! : shift 65;
+95 ( : shift 64;
+95 Acesso : goto 81;
+95 ChamadaFuncao : goto 63;
+95 Fator : goto 121;
+95 ID : shift 80;
+95 NUM_DEC : shift 62;
+95 NUM_INT : shift 61;
+96 ) : shift 122;
+96 || : shift 83;
+97 != : reduce 66;
+97 % : reduce 66;
+97 && : reduce 66;
+97 ) : reduce 66;
+97 * : reduce 66;
+97 + : reduce 66;
+97 , : reduce 66;
+97 - : reduce 66;
+97 / : reduce 66;
+97 ; : reduce 66;
+97 < : reduce 66;
+97 <= : reduce 66;
+97 == : reduce 66;
+97 > : reduce 66;
+97 >= : reduce 66;
+97 ] : reduce 66;
+97 || : reduce 66;
+98 ; : shift 123;
+98 || : shift 83;
+99 ] : shift 124;
+99 || : shift 83;
+100 != : reduce 68;
+100 % : reduce 68;
+100 && : reduce 68;
+100 ) : reduce 68;
+100 * : reduce 68;
+100 + : reduce 68;
+100 , : reduce 68;
+100 - : reduce 68;
+100 . : reduce 68;
+100 / : reduce 68;
+100 ; : reduce 68;
+100 < : reduce 68;
+100 <= : reduce 68;
+100 = : reduce 68;
+100 == : reduce 68;
+100 > : reduce 68;
+100 >= : reduce 68;
+100 ] : reduce 68;
+100 || : reduce 68;
+101 ) : shift 125;
+102 ) : reduce 72;
+102 , : shift 126;
+102 || : shift 83;
+103 ; : shift 127;
+103 || : shift 83;
+104 != : reduce 69;
+104 % : reduce 69;
+104 && : reduce 69;
+104 ) : reduce 69;
+104 * : reduce 69;
+104 + : reduce 69;
+104 , : reduce 69;
+104 - : reduce 69;
+104 . : reduce 69;
+104 / : reduce 69;
+104 ; : reduce 69;
+104 < : reduce 69;
+104 <= : reduce 69;
+104 = : reduce 69;
+104 == : reduce 69;
+104 > : reduce 69;
+104 >= : reduce 69;
+104 ] : reduce 69;
+104 || : reduce 69;
+105 ) : shift 128;
+105 || : shift 83;
+106 ) : shift 129;
+106 || : shift 83;
+107 ! : shift 65;
+107 ( : shift 64;
+107 Acesso : goto 81;
+107 ChamadaFuncao : goto 63;
+107 Exp : goto 130;
+107 ExpAdd : goto 58;
+107 ExpAnd : goto 55;
+107 ExpEq : goto 56;
+107 ExpMult : goto 59;
+107 ExpRel : goto 57;
+107 Fator : goto 60;
+107 ID : shift 80;
+107 NUM_DEC : shift 62;
+107 NUM_INT : shift 61;
+108 ! : reduce 32;
+108 ( : reduce 32;
+108 ID : reduce 32;
+108 NUM_DEC : reduce 32;
+108 NUM_INT : reduce 32;
+108 double : reduce 32;
+108 for : reduce 32;
+108 if : reduce 32;
+108 int : reduce 32;
+108 return : reduce 32;
+108 while : reduce 32;
+108 } : reduce 32;
+109 && : shift 84;
+109 ) : reduce 41;
+109 , : reduce 41;
+109 ; : reduce 41;
+109 ] : reduce 41;
+109 || : reduce 41;
+110 != : shift 86;
+110 && : reduce 43;
+110 ) : reduce 43;
+110 , : reduce 43;
+110 ; : reduce 43;
+110 == : shift 85;
+110 ] : reduce 43;
+110 || : reduce 43;
+111 != : reduce 45;
+111 && : reduce 45;
+111 ) : reduce 45;
+111 , : reduce 45;
+111 ; : reduce 45;
+111 < : shift 87;
+111 <= : shift 88;
+111 == : reduce 45;
+111 > : shift 89;
+111 >= : shift 90;
+111 ] : reduce 45;
+111 || : reduce 45;
+112 != : reduce 46;
+112 && : reduce 46;
+112 ) : reduce 46;
+112 , : reduce 46;
+112 ; : reduce 46;
+112 < : shift 87;
+112 <= : shift 88;
+112 == : reduce 46;
+112 > : shift 89;
+112 >= : shift 90;
+112 ] : reduce 46;
+112 || : reduce 46;
+113 != : reduce 48;
+113 && : reduce 48;
+113 ) : reduce 48;
+113 + : shift 91;
+113 , : reduce 48;
+113 - : shift 92;
+113 ; : reduce 48;
+113 < : reduce 48;
+113 <= : reduce 48;
+113 == : reduce 48;
+113 > : reduce 48;
+113 >= : reduce 48;
+113 ] : reduce 48;
+113 || : reduce 48;
+114 != : reduce 49;
+114 && : reduce 49;
+114 ) : reduce 49;
+114 + : shift 91;
+114 , : reduce 49;
+114 - : shift 92;
+114 ; : reduce 49;
+114 < : reduce 49;
+114 <= : reduce 49;
+114 == : reduce 49;
+114 > : reduce 49;
+114 >= : reduce 49;
+114 ] : reduce 49;
+114 || : reduce 49;
+115 != : reduce 50;
+115 && : reduce 50;
+115 ) : reduce 50;
+115 + : shift 91;
+115 , : reduce 50;
+115 - : shift 92;
+115 ; : reduce 50;
+115 < : reduce 50;
+115 <= : reduce 50;
+115 == : reduce 50;
+115 > : reduce 50;
+115 >= : reduce 50;
+115 ] : reduce 50;
+115 || : reduce 50;
+116 != : reduce 51;
+116 && : reduce 51;
+116 ) : reduce 51;
+116 + : shift 91;
+116 , : reduce 51;
+116 - : shift 92;
+116 ; : reduce 51;
+116 < : reduce 51;
+116 <= : reduce 51;
+116 == : reduce 51;
+116 > : reduce 51;
+116 >= : reduce 51;
+116 ] : reduce 51;
+116 || : reduce 51;
+117 != : reduce 53;
+117 % : shift 95;
+117 && : reduce 53;
+117 ) : reduce 53;
+117 * : shift 93;
+117 + : reduce 53;
+117 , : reduce 53;
+117 - : reduce 53;
+117 / : shift 94;
+117 ; : reduce 53;
+117 < : reduce 53;
+117 <= : reduce 53;
+117 == : reduce 53;
+117 > : reduce 53;
+117 >= : reduce 53;
+117 ] : reduce 53;
+117 || : reduce 53;
+118 != : reduce 54;
+118 % : shift 95;
+118 && : reduce 54;
+118 ) : reduce 54;
+118 * : shift 93;
+118 + : reduce 54;
+118 , : reduce 54;
+118 - : reduce 54;
+118 / : shift 94;
+118 ; : reduce 54;
+118 < : reduce 54;
+118 <= : reduce 54;
+118 == : reduce 54;
+118 > : reduce 54;
+118 >= : reduce 54;
+118 ] : reduce 54;
+118 || : reduce 54;
+119 != : reduce 56;
+119 % : reduce 56;
+119 && : reduce 56;
+119 ) : reduce 56;
+119 * : reduce 56;
+119 + : reduce 56;
+119 , : reduce 56;
+119 - : reduce 56;
+119 / : reduce 56;
+119 ; : reduce 56;
+119 < : reduce 56;
+119 <= : reduce 56;
+119 == : reduce 56;
+119 > : reduce 56;
+119 >= : reduce 56;
+119 ] : reduce 56;
+119 || : reduce 56;
+120 != : reduce 57;
+120 % : reduce 57;
+120 && : reduce 57;
+120 ) : reduce 57;
+120 * : reduce 57;
+120 + : reduce 57;
+120 , : reduce 57;
+120 - : reduce 57;
+120 / : reduce 57;
+120 ; : reduce 57;
+120 < : reduce 57;
+120 <= : reduce 57;
+120 == : reduce 57;
+120 > : reduce 57;
+120 >= : reduce 57;
+120 ] : reduce 57;
+120 || : reduce 57;
+121 != : reduce 58;
+121 % : reduce 58;
+121 && : reduce 58;
+121 ) : reduce 58;
+121 * : reduce 58;
+121 + : reduce 58;
+121 , : reduce 58;
+121 - : reduce 58;
+121 / : reduce 58;
+121 ; : reduce 58;
+121 < : reduce 58;
+121 <= : reduce 58;
+121 == : reduce 58;
+121 > : reduce 58;
+121 >= : reduce 58;
+121 ] : reduce 58;
+121 || : reduce 58;
+122 != : reduce 65;
+122 % : reduce 65;
+122 && : reduce 65;
+122 ) : reduce 65;
+122 * : reduce 65;
+122 + : reduce 65;
+122 , : reduce 65;
+122 - : reduce 65;
+122 / : reduce 65;
+122 ; : reduce 65;
+122 < : reduce 65;
+122 <= : reduce 65;
+122 == : reduce 65;
+122 > : reduce 65;
+122 >= : reduce 65;
+122 ] : reduce 65;
+122 || : reduce 65;
+123 ! : reduce 26;
+123 ( : reduce 26;
+123 ID : reduce 26;
+123 NUM_DEC : reduce 26;
+123 NUM_INT : reduce 26;
+123 double : reduce 26;
+123 for : reduce 26;
+123 if : reduce 26;
+123 int : reduce 26;
+123 return : reduce 26;
+123 while : reduce 26;
+123 } : reduce 26;
+124 != : reduce 67;
+124 % : reduce 67;
+124 && : reduce 67;
+124 ) : reduce 67;
+124 * : reduce 67;
+124 + : reduce 67;
+124 , : reduce 67;
+124 - : reduce 67;
+124 . : reduce 67;
+124 / : reduce 67;
+124 ; : reduce 67;
+124 < : reduce 67;
+124 <= : reduce 67;
+124 = : reduce 67;
+124 == : reduce 67;
+124 > : reduce 67;
+124 >= : reduce 67;
+124 ] : reduce 67;
+124 || : reduce 67;
+125 != : reduce 70;
+125 % : reduce 70;
+125 && : reduce 70;
+125 ) : reduce 70;
+125 * : reduce 70;
+125 + : reduce 70;
+125 , : reduce 70;
+125 - : reduce 70;
+125 / : reduce 70;
+125 ; : reduce 70;
+125 < : reduce 70;
+125 <= : reduce 70;
+125 == : reduce 70;
+125 > : reduce 70;
+125 >= : reduce 70;
+125 ] : reduce 70;
+125 || : reduce 70;
+126 ! : shift 65;
+126 ( : shift 64;
+126 ) : reduce 73;
+126 Acesso : goto 81;
+126 ChamadaFuncao : goto 63;
+126 Exp : goto 102;
+126 ExpAdd : goto 58;
+126 ExpAnd : goto 55;
+126 ExpEq : goto 56;
+126 ExpMult : goto 59;
+126 ExpRel : goto 57;
+126 Fator : goto 60;
+126 ID : shift 80;
+126 ListaArgs : goto 131;
+126 NUM_DEC : shift 62;
+126 NUM_INT : shift 61;
+127 ! : reduce 27;
+127 ( : reduce 27;
+127 ID : reduce 27;
+127 NUM_DEC : reduce 27;
+127 NUM_INT : reduce 27;
+127 double : reduce 27;
+127 for : reduce 27;
+127 if : reduce 27;
+127 int : reduce 27;
+127 return : reduce 27;
+127 while : reduce 27;
+127 } : reduce 27;
+128 Bloco : goto 132;
+128 { : shift 39;
+129 Bloco : goto 133;
+129 { : shift 39;
+130 ; : shift 134;
+130 || : shift 83;
+131 ) : reduce 71;
+132 ! : reduce 28;
+132 ( : reduce 28;
+132 ID : reduce 28;
+132 NUM_DEC : reduce 28;
+132 NUM_INT : reduce 28;
+132 double : reduce 28;
+132 else : shift 135;
+132 for : reduce 28;
+132 if : reduce 28;
+132 int : reduce 28;
+132 return : reduce 28;
+132 while : reduce 28;
+132 } : reduce 28;
+133 ! : reduce 30;
+133 ( : reduce 30;
+133 ID : reduce 30;
+133 NUM_DEC : reduce 30;
+133 NUM_INT : reduce 30;
+133 double : reduce 30;
+133 for : reduce 30;
+133 if : reduce 30;
+133 int : reduce 30;
+133 return : reduce 30;
+133 while : reduce 30;
+133 } : reduce 30;
+134 ) : reduce 40;
+134 ++ : shift 138;
+134 -- : shift 139;
+134 Atualizacao : goto 136;
+134 ID : shift 137;
+135 Bloco : goto 140;
+135 { : shift 39;
+136 ) : shift 141;
+137 ++ : shift 143;
+137 -- : shift 144;
+137 = : shift 142;
+138 ID : shift 145;
+139 ID : shift 146;
+140 ! : reduce 29;
+140 ( : reduce 29;
+140 ID : reduce 29;
+140 NUM_DEC : reduce 29;
+140 NUM_INT : reduce 29;
+140 double : reduce 29;
+140 for : reduce 29;
+140 if : reduce 29;
+140 int : reduce 29;
+140 return : reduce 29;
+140 while : reduce 29;
+140 } : reduce 29;
+141 Bloco : goto 147;
+141 { : shift 39;
+142 ! : shift 65;
+142 ( : shift 64;
+142 Acesso : goto 81;
+142 ChamadaFuncao : goto 63;
+142 Exp : goto 148;
+142 ExpAdd : goto 58;
+142 ExpAnd : goto 55;
+142 ExpEq : goto 56;
+142 ExpMult : goto 59;
+142 ExpRel : goto 57;
+142 Fator : goto 60;
+142 ID : shift 80;
+142 NUM_DEC : shift 62;
+142 NUM_INT : shift 61;
+143 ) : reduce 38;
+144 ) : reduce 39;
+145 ) : reduce 36;
+146 ) : reduce 37;
+147 ! : reduce 31;
+147 ( : reduce 31;
+147 ID : reduce 31;
+147 NUM_DEC : reduce 31;
+147 NUM_INT : reduce 31;
+147 double : reduce 31;
+147 for : reduce 31;
+147 if : reduce 31;
+147 int : reduce 31;
+147 return : reduce 31;
+147 while : reduce 31;
+147 } : reduce 31;
+148 ) : reduce 35;
+148 || : shift 83;
+Programa->:ListaElementos
+ListaElementos->:Elemento:ListaElementos
+ListaElementos->
+Elemento->:IncludeDecl
+Elemento->:TypedefDecl
+Elemento->:FuncaoDecl
+IncludeDecl->:#:ID:<:ID:.:ID:>
+TypedefDecl->:typedef:struct:{:ListaCampos:}:ID:;
+ListaCampos->:DeclaracaoVar:ListaCampos
+ListaCampos->
+Tipo->:int
+Tipo->:double
+Tipo->:ID
+DeclaracaoVar->:Tipo:ListaIDs:;
+ListaIDs->:ID:,:ListaIDs
+ListaIDs->:ID
+FuncaoDecl->:Tipo:ID:(:ListaParams:):Bloco
+ListaParams->:Parametro:,:ListaParams
+ListaParams->:Parametro
+ListaParams->
+Parametro->:Tipo:ID
+Parametro->:Tipo:ID:[:]
+Bloco->:{:ListaComandos:}
+ListaComandos->:Comando:ListaComandos
+ListaComandos->
+Comando->:DeclaracaoVar
+Comando->:ID:=:Exp:;
+Comando->:Acesso:=:Exp:;
+Comando->:if:(:Exp:):Bloco
+Comando->:if:(:Exp:):Bloco:else:Bloco
+Comando->:while:(:Exp:):Bloco
+Comando->:for:(:DeclaracaoVar:Exp:;:Atualizacao:):Bloco
+Comando->:return:Exp:;
+Comando->:return:;
+Comando->:Exp:;
+Atualizacao->:ID:=:Exp
+Atualizacao->:++:ID
+Atualizacao->:--:ID
+Atualizacao->:ID:++
+Atualizacao->:ID:--
+Atualizacao->
+Exp->:Exp:||:ExpAnd
+Exp->:ExpAnd
+ExpAnd->:ExpAnd:&&:ExpEq
+ExpAnd->:ExpEq
+ExpEq->:ExpEq:==:ExpRel
+ExpEq->:ExpEq:!=:ExpRel
+ExpEq->:ExpRel
+ExpRel->:ExpRel:<:ExpAdd
+ExpRel->:ExpRel:<=:ExpAdd
+ExpRel->:ExpRel:>:ExpAdd
+ExpRel->:ExpRel:>=:ExpAdd
+ExpRel->:ExpAdd
+ExpAdd->:ExpAdd:+:ExpMult
+ExpAdd->:ExpAdd:-:ExpMult
+ExpAdd->:ExpMult
+ExpMult->:ExpMult:*:Fator
+ExpMult->:ExpMult:/:Fator
+ExpMult->:ExpMult:%:Fator
+ExpMult->:Fator
+Fator->:NUM_INT
+Fator->:NUM_DEC
+Fator->:ID
+Fator->:Acesso
+Fator->:ChamadaFuncao
+Fator->:(:Exp:)
+Fator->:!:Fator
+Acesso->:ID:[:Exp:]
+Acesso->:ID:.:ID
+Acesso->:Acesso:.:ID
+ChamadaFuncao->:ID:(:ListaArgs:)
+ListaArgs->:Exp:,:ListaArgs
+ListaArgs->:Exp
+ListaArgs->
+Estado:0 Lookahead:#
+Transicao:(shift:,r=-1,prox=6)
+Estado:6 Lookahead:ID
+Transicao:(shift:,r=-1,prox=13)
+Estado:13 Lookahead:<
+Transicao:(shift:,r=-1,prox=16)
+Estado:16 Lookahead:ID
+Transicao:(shift:,r=-1,prox=19)
+Estado:19 Lookahead:.
+Transicao:(shift:,r=-1,prox=26)
+Estado:26 Lookahead:ID
+Transicao:(shift:,r=-1,prox=34)
+Estado:34 Lookahead:>
+Transicao:(shift:,r=-1,prox=42)
+Estado:42 Lookahead:typedef
+Transicao:(reduz:,r=6,prox=-1)
+Estado:3 Lookahead:typedef
+Transicao:(reduz:,r=3,prox=-1)
+Estado:2 Lookahead:typedef
+Transicao:(shift:,r=-1,prox=7)
+Estado:7 Lookahead:struct
+Transicao:(shift:,r=-1,prox=14)
+Estado:14 Lookahead:{
+Transicao:(shift:,r=-1,prox=17)
+Estado:17 Lookahead:int
+Transicao:(shift:,r=-1,prox=9)
+Estado:9 Lookahead:ID
+Transicao:(reduz:,r=10,prox=-1)
+Estado:22 Lookahead:ID
+Transicao:(shift:,r=-1,prox=30)
+Estado:30 Lookahead:;
+Transicao:(reduz:,r=15,prox=-1)
+Estado:29 Lookahead:;
+Transicao:(shift:,r=-1,prox=36)
+Estado:36 Lookahead:int
+Transicao:(reduz:,r=13,prox=-1)
+Estado:21 Lookahead:int
+Transicao:(shift:,r=-1,prox=9)
+Estado:9 Lookahead:ID
+Transicao:(reduz:,r=10,prox=-1)
+Estado:22 Lookahead:ID
+Transicao:(shift:,r=-1,prox=30)
+Estado:30 Lookahead:;
+Transicao:(reduz:,r=15,prox=-1)
+Estado:29 Lookahead:;
+Transicao:(shift:,r=-1,prox=36)
+Estado:36 Lookahead:}
+Transicao:(reduz:,r=13,prox=-1)
+Estado:21 Lookahead:}
+Transicao:(reduz:,r=9,prox=-1)
+Estado:28 Lookahead:}
+Transicao:(reduz:,r=8,prox=-1)
+Estado:28 Lookahead:}
+Transicao:(reduz:,r=8,prox=-1)
+Estado:20 Lookahead:}
+Transicao:(shift:,r=-1,prox=27)
+Estado:27 Lookahead:ID
+Transicao:(shift:,r=-1,prox=35)
+Estado:35 Lookahead:;
+Transicao:(shift:,r=-1,prox=43)
+Estado:43 Lookahead:typedef
+Transicao:(reduz:,r=7,prox=-1)
+Estado:4 Lookahead:typedef
+Transicao:(reduz:,r=4,prox=-1)
+Estado:2 Lookahead:typedef
+Transicao:(shift:,r=-1,prox=7)
+Estado:7 Lookahead:struct
+Transicao:(shift:,r=-1,prox=14)
+Estado:14 Lookahead:{
+Transicao:(shift:,r=-1,prox=17)
+Estado:17 Lookahead:ID
+Transicao:(shift:,r=-1,prox=11)
+Estado:11 Lookahead:ID
+Transicao:(reduz:,r=12,prox=-1)
+Estado:22 Lookahead:ID
+Transicao:(shift:,r=-1,prox=30)
+Estado:30 Lookahead:,
+Transicao:(shift:,r=-1,prox=37)
+Estado:37 Lookahead:ID
+Transicao:(shift:,r=-1,prox=30)
+Estado:30 Lookahead:,
+Transicao:(shift:,r=-1,prox=37)
+Estado:37 Lookahead:ID
+Transicao:(shift:,r=-1,prox=30)
+Estado:30 Lookahead:;
+Transicao:(reduz:,r=15,prox=-1)
+Estado:44 Lookahead:;
+Transicao:(reduz:,r=14,prox=-1)
+Estado:44 Lookahead:;
+Transicao:(reduz:,r=14,prox=-1)
+Estado:29 Lookahead:;
+Transicao:(shift:,r=-1,prox=36)
+Estado:36 Lookahead:int
+Transicao:(reduz:,r=13,prox=-1)
+Estado:21 Lookahead:int
+Transicao:(shift:,r=-1,prox=9)
+Estado:9 Lookahead:ID
+Transicao:(reduz:,r=10,prox=-1)
+Estado:22 Lookahead:ID
+Transicao:(shift:,r=-1,prox=30)
+Estado:30 Lookahead:;
+Transicao:(reduz:,r=15,prox=-1)
+Estado:29 Lookahead:;
+Transicao:(shift:,r=-1,prox=36)
+Estado:36 Lookahead:}
+Transicao:(reduz:,r=13,prox=-1)
+Estado:21 Lookahead:}
+Transicao:(reduz:,r=9,prox=-1)
+Estado:28 Lookahead:}
+Transicao:(reduz:,r=8,prox=-1)
+Estado:28 Lookahead:}
+Transicao:(reduz:,r=8,prox=-1)
+Estado:20 Lookahead:}
+Transicao:(shift:,r=-1,prox=27)
+Estado:27 Lookahead:ID
+Transicao:(shift:,r=-1,prox=35)
+Estado:35 Lookahead:;
+Transicao:(shift:,r=-1,prox=43)
+Estado:43 Lookahead:double
+Transicao:(reduz:,r=7,prox=-1)
+Estado:4 Lookahead:double
+Transicao:(reduz:,r=4,prox=-1)
+Estado:2 Lookahead:double
+Transicao:(shift:,r=-1,prox=10)
+Estado:10 Lookahead:ID
+Transicao:(reduz:,r=11,prox=-1)
+Estado:8 Lookahead:ID
+Transicao:(shift:,r=-1,prox=15)
+Estado:15 Lookahead:(
+Transicao:(shift:,r=-1,prox=18)
+Estado:18 Lookahead:ID
+Transicao:(shift:,r=-1,prox=11)
+Estado:11 Lookahead:ID
+Transicao:(reduz:,r=12,prox=-1)
+Estado:25 Lookahead:ID
+Transicao:(shift:,r=-1,prox=33)
+Estado:33 Lookahead:[
+Transicao:(shift:,r=-1,prox=41)
+Estado:41 Lookahead:]
+Transicao:(shift:,r=-1,prox=66)
+Estado:66 Lookahead:,
+Transicao:(reduz:,r=21,prox=-1)
+Estado:24 Lookahead:,
+Transicao:(shift:,r=-1,prox=32)
+Estado:32 Lookahead:int
+Transicao:(shift:,r=-1,prox=9)
+Estado:9 Lookahead:ID
+Transicao:(reduz:,r=10,prox=-1)
+Estado:25 Lookahead:ID
+Transicao:(shift:,r=-1,prox=33)
+Estado:33 Lookahead:,
+Transicao:(reduz:,r=20,prox=-1)
+Estado:24 Lookahead:,
+Transicao:(shift:,r=-1,prox=32)
+Estado:32 Lookahead:ID
+Transicao:(shift:,r=-1,prox=11)
+Estado:11 Lookahead:ID
+Transicao:(reduz:,r=12,prox=-1)
+Estado:25 Lookahead:ID
+Transicao:(shift:,r=-1,prox=33)
+Estado:33 Lookahead:)
+Transicao:(reduz:,r=20,prox=-1)
+Estado:24 Lookahead:)
+Transicao:(reduz:,r=18,prox=-1)
+Estado:40 Lookahead:)
+Transicao:(reduz:,r=17,prox=-1)
+Estado:40 Lookahead:)
+Transicao:(reduz:,r=17,prox=-1)
+Estado:23 Lookahead:)
+Transicao:(shift:,r=-1,prox=31)
+Estado:31 Lookahead:{
+Transicao:(shift:,r=-1,prox=39)
+Estado:39 Lookahead:if
+Transicao:(shift:,r=-1,prox=50)
+Estado:50 Lookahead:(
+Transicao:(shift:,r=-1,prox=75)
+Estado:75 Lookahead:ID
+Transicao:(shift:,r=-1,prox=80)
+Estado:80 Lookahead:<=
+Transicao:(reduz:,r=62,prox=-1)
+Estado:60 Lookahead:<=
+Transicao:(reduz:,r=59,prox=-1)
+Estado:59 Lookahead:<=
+Transicao:(reduz:,r=55,prox=-1)
+Estado:58 Lookahead:<=
+Transicao:(reduz:,r=52,prox=-1)
+Estado:57 Lookahead:<=
+Transicao:(shift:,r=-1,prox=88)
+Estado:88 Lookahead:NUM_INT
+Transicao:(shift:,r=-1,prox=61)
+Estado:61 Lookahead:)
+Transicao:(reduz:,r=60,prox=-1)
+Estado:60 Lookahead:)
+Transicao:(reduz:,r=59,prox=-1)
+Estado:59 Lookahead:)
+Transicao:(reduz:,r=55,prox=-1)
+Estado:114 Lookahead:)
+Transicao:(reduz:,r=49,prox=-1)
+Estado:57 Lookahead:)
+Transicao:(reduz:,r=47,prox=-1)
+Estado:56 Lookahead:)
+Transicao:(reduz:,r=44,prox=-1)
+Estado:55 Lookahead:)
+Transicao:(reduz:,r=42,prox=-1)
+Estado:105 Lookahead:)
+Transicao:(shift:,r=-1,prox=128)
+Estado:128 Lookahead:{
+Transicao:(shift:,r=-1,prox=39)
+Estado:39 Lookahead:return
+Transicao:(shift:,r=-1,prox=53)
+Estado:53 Lookahead:NUM_DEC
+Transicao:(shift:,r=-1,prox=62)
+Estado:62 Lookahead:;
+Transicao:(reduz:,r=61,prox=-1)
+Estado:60 Lookahead:;
+Transicao:(reduz:,r=59,prox=-1)
+Estado:59 Lookahead:;
+Transicao:(reduz:,r=55,prox=-1)
+Estado:58 Lookahead:;
+Transicao:(reduz:,r=52,prox=-1)
+Estado:57 Lookahead:;
+Transicao:(reduz:,r=47,prox=-1)
+Estado:56 Lookahead:;
+Transicao:(reduz:,r=44,prox=-1)
+Estado:55 Lookahead:;
+Transicao:(reduz:,r=42,prox=-1)
+Estado:78 Lookahead:;
+Transicao:(shift:,r=-1,prox=108)
+Estado:108 Lookahead:}
+Transicao:(reduz:,r=32,prox=-1)
+Estado:46 Lookahead:}
+Transicao:(reduz:,r=24,prox=-1)
+Estado:68 Lookahead:}
+Transicao:(reduz:,r=23,prox=-1)
+Estado:45 Lookahead:}
+Transicao:(shift:,r=-1,prox=67)
+Estado:67 Lookahead:else
+Transicao:(reduz:,r=22,prox=-1)
+Estado:132 Lookahead:else
+Transicao:(shift:,r=-1,prox=135)
+Estado:135 Lookahead:if
+Transicao:(ZERO,r=-1,prox=-1)
+Parse executado
+[NO_NULO]

@@ -1,5 +1,8 @@
 # Ignora pastas de documentação em qualquer nível
 **/docs/
+**/entregaveis/
+
+
 
 # Binários e arquivos temporários do Flex
 meu_compilador
