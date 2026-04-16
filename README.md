@@ -17,6 +17,7 @@ Repositório destinado ao armazenamento dos laboratórios e projetos práticos d
 | Pasta | Descrição | Status |
 | :--- | :--- | :--- |
 | [**lab01/**](./lab01/) | **Analisador Léxico**: Identificação de tokens em ANSI C usando Flex. | ✅ |
+| [**lab02/**](./lab02/) | **Analisador Sintático**: Validação estrutural via gramática LALR(1) e tabelas de estados. | ✅ |
 
 ## Como Clonar e Usar
 
